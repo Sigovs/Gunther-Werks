@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>G contract v2 · Programs</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Instrument+Sans:wdth,wght@75..100,400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="v2.css">
+</head>
+<body>
+<header class="hd">
+  <img class="hd__logo" src="../assets/logos/gunther-werks-logo-white.svg" alt="Gunther Werks">
+  <span class="hd__sub">MIAMI<span> · PRESTIGE IMPORTS</span></span>
+  <nav class="hd__nav"><a class="on">Programs</a><a>Atelier</a><a>Provenance</a><a>News</a><a>Miami</a></nav>
+  <a class="hd__cta">Enquire</a><a class="hd__menu">Menu</a>
+</header>
+
+<section class="pg" id="programs" aria-labelledby="pg-h">
+  <header class="pg__head wrap"><p class="kick">The programs</p><h2 class="h2" id="pg-h">Four programs. One 993.</h2></header>
+  <div class="rail" role="tablist" aria-label="Gunther Werks programs"></div>
+  <div class="plate" role="tabpanel"><div class="stage" id="stage"></div></div>
+  <div class="info wrap">
+    <p class="info__line"><span class="js-line"></span><small class="js-src"></small></p>
+    <dl class="facts"></dl>
+    <div class="act"><a class="btn btn--w js-enq"></a><a class="lnk js-ext"></a></div>
+  </div>
+</section>
+
+<section class="se wrap" aria-labelledby="se-h">
+  <div class="se__head"><h3 id="se-h">Special editions</h3></div>
+  <ul class="se__list"></ul>
+</section>
+
+<script>
+const P = {
+  f26:   { name: 'F-26',  run: '26 examples',  line: 'The future of analog power.', src: 'F-26 programme page · F-26 release, 15 Aug 2025',
+           facts: [['Power', '1,000', 'hp'], ['Engine', '4.0 L twin-turbo'], ['Signature', 'Slantnose, after the 930 Flachbau']] },
+  turbo: { name: 'Turbo', run: '75 examples',  line: 'Inspired by forced induction.', src: 'Turbo programme page',
+           facts: [['Power', '850', 'hp, track mode'], ['Engine', '4.0 L twin-turbo'], ['Signature', 'Hydraulic nose lift from the wheel']] },
+  gwr:   { name: 'GWR',   run: '40 examples',  line: 'The definitive 993.', src: 'GWR programme page',
+           facts: [['Power', '500+', 'hp at 9,000 rpm'], ['Engine', '4.0 L naturally aspirated'], ['Signature', 'S-duct hood, ventilated ducktail']] },
+  gwx:   { name: 'GWX',   run: 'By invitation', line: 'One-of-one and few-off editions.', src: 'GWX page · GWX release, 13 Aug 2025',
+           facts: [['Power', '440', 'hp'], ['Engine', '4.0 L, second generation'], ['Signature', 'Candy Purple, exclusive to the GWX']] }
+};
+const SE = [['gxr', 'GXR-EVO', '15', 'units'], ['brundle', 'Brundle Edition', '5', 'examples'], ['thermal', 'Thermal Edition', '5', 'examples'], ['endgame', 'Project End Game', '1', 'of 1']];
+const REG = {
+  f26: { w: 2400, h: 815, f: [.21199, .91486], r: [.77623, .91137] }, turbo: { w: 1314, h: 448, f: [.20616, .91964], r: [.77968, .92634] },
+  gwr: { w: 2400, h: 812, f: [.21502, .93255], r: [.78776, .93324] }, gwx: { w: 2400, h: 787, f: [.21644, .92194], r: [.76695, .91913] },
+  gxr: { w: 2400, h: 766, f: [.19014, .96104], r: [.73818, .94668] }, brundle: { w: 2400, h: 707, f: [.23356, .96176], r: [.73308, .95042] },
+  thermal: { w: 1344, h: 431, f: [.2224, .93271], r: [.76004, .94432] }, endgame: { w: 2400, h: 734, f: [.22136, .93504], r: [.77672, .93285] }
+};
+const ST = { W: 1.90, H: 0.80, FX: 0.37, FLOOR: 0.60 };
+function place(k, el) {
+  const r = REG[k], a = r.w / r.h, fx = r.f[0], fy = r.f[1] / a, rx = r.r[0], ry = r.r[1] / a;
+  const th = Math.atan2(ry - fy, rx - fx), s = (1 / ST.W) / Math.hypot(rx - fx, ry - fy);
+  el.style.left = (ST.FX / ST.W - s * fx) * 100 + '%'; el.style.top = ((ST.FLOOR / ST.W - s * fy) / (ST.H / ST.W)) * 100 + '%';
+  el.style.width = s * 100 + '%'; el.style.aspectRatio = r.w + '/' + r.h;
+  el.style.setProperty('--ox', fx * 100 + '%'); el.style.setProperty('--oy', r.f[1] * 100 + '%'); el.style.setProperty('--rot', -th + 'rad');
+}
+function fill(stage, k) {
+  stage.innerHTML = '<i class="sh sh--amb"></i><i class="sh sh--body"></i><i class="sh sh--tyre sh--f"></i><i class="sh sh--tyre sh--r"></i>';
+  const im = new Image(); im.className = 'car'; im.src = 'img/cut/' + k + '.webp'; im.alt = ''; place(k, im); stage.appendChild(im);
+}
+const q = new URLSearchParams(location.search), cur = q.get('p') || 'f26';
+const rail = document.querySelector('.rail');
+Object.keys(P).forEach(k => { const b = document.createElement('button'); b.className = 'tab' + (k === cur ? ' is-on' : ''); b.setAttribute('role', 'tab'); b.setAttribute('aria-selected', k === cur); b.innerHTML = `<span class="tab__name">${P[k].name}</span><span class="tab__run">${P[k].run}</span>`; rail.appendChild(b); });
+if (q.has('focus')) rail.children[Object.keys(P).indexOf(q.get('focus'))].classList.add('focus-demo');
+fill(document.getElementById('stage'), cur);
+const p = P[cur];
+document.querySelector('.js-line').textContent = p.line;
+document.querySelector('.js-src').textContent = 'Source: Gunther Werks ' + p.src;
+document.querySelector('.facts').innerHTML = p.facts.map(([t, v, u]) => u ? `<div><dt>${t}</dt><dd>${v}<small>${u}</small></dd></div>` : `<div><dt>${t}</dt><dd class="t">${v}</dd></div>`).join('');
+document.querySelector('.js-enq').innerHTML = `Enquire about the ${p.name} <span class="arrow">→</span>`;
+document.querySelector('.js-ext').innerHTML = `The ${p.name} at guntherwerks.com <span class="arrow">↗</span>`;
+document.querySelector('.se__list').innerHTML = SE.map(([k, n, v, u]) => `<li class="se__it"><div class="plate"><div class="stage" data-k="${k}"></div></div><p class="se__name">${n}</p><p class="se__run"><b>${v}</b>${u}</p><a class="lnk">On guntherwerks.com <span class="arrow">↗</span></a></li>`).join('');
+document.querySelectorAll('.se .stage').forEach(s => fill(s, s.dataset.k));
+</script>
+</body>
+</html>

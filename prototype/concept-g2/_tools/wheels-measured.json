@@ -1,0 +1,202 @@
+{
+ "f26": {
+  "file": "f26-profile-l-silver_4259x1457.png",
+  "W": 4259,
+  "H": 1457,
+  "front": {
+   "cx": 934.4,
+   "cy": 996.2,
+   "rim": 256.5,
+   "tyre": 341.6,
+   "tyre_n": 29,
+   "tyre_iqr": 47.0,
+   "floor": 1337.8,
+   "contact": 1311
+  },
+  "rear": {
+   "cx": 3314.9,
+   "cy": 981.2,
+   "rim": 257.7,
+   "tyre": 328.3,
+   "tyre_n": 29,
+   "tyre_iqr": 50.0,
+   "floor": 1309.5,
+   "contact": 1306
+  }
+ },
+ "turbo": {
+  "file": "turbo-profile-l-orange_1400x466.png",
+  "W": 1400,
+  "H": 466,
+  "front": {
+   "cx": 311.9,
+   "cy": 314.5,
+   "rim": 81.7,
+   "tyre": 109.3,
+   "tyre_n": 28,
+   "tyre_iqr": 22.1,
+   "floor": 423.8,
+   "contact": 412
+  },
+  "rear": {
+   "cx": 1065.5,
+   "cy": 313.0,
+   "rim": 81.0,
+   "tyre": 102.6,
+   "tyre_n": 29,
+   "tyre_iqr": 10.5,
+   "floor": 415.7,
+   "contact": 415
+  }
+ },
+ "gwr": {
+  "file": "gwr-profile-l-turquoise_4384x1503.png",
+  "W": 4384,
+  "H": 1503,
+  "front": {
+   "cx": 967.6,
+   "cy": 1023.7,
+   "rim": 225.1,
+   "tyre": 245.6,
+   "tyre_n": 32,
+   "tyre_iqr": 10.1,
+   "floor": 1269.3,
+   "contact": 1341
+  },
+  "rear": {
+   "cx": 3401.2,
+   "cy": 1032.1,
+   "rim": 242.2,
+   "tyre": 326.3,
+   "tyre_n": 28,
+   "tyre_iqr": 24.1,
+   "floor": 1358.4,
+   "contact": 1342
+  }
+ },
+ "gwx": {
+  "file": "gwx-profile-l-candypurple_4342x1479.png",
+  "W": 4342,
+  "H": 1479,
+  "front": {
+   "cx": 944.5,
+   "cy": 993.8,
+   "rim": 260.0,
+   "tyre": 377.0,
+   "tyre_n": 26,
+   "tyre_iqr": 68.2,
+   "floor": 1370.7,
+   "contact": 1311
+  },
+  "rear": {
+   "cx": 3331.5,
+   "cy": 983.0,
+   "rim": 258.7,
+   "tyre": 323.9,
+   "tyre_n": 28,
+   "tyre_iqr": 103.4,
+   "floor": 1306.8,
+   "contact": 1307
+  }
+ },
+ "gxr": {
+  "file": "gxrevo-profile-l-carbon_4584x1463.png",
+  "W": 4584,
+  "H": 1463,
+  "front": {
+   "cx": 871.6,
+   "cy": 1055.5,
+   "rim": 267.4,
+   "tyre": 386.7,
+   "tyre_n": 24,
+   "tyre_iqr": 183.5,
+   "floor": 1442.2,
+   "contact": 1406
+  },
+  "rear": {
+   "cx": 3383.8,
+   "cy": 1029.8,
+   "rim": 272.2,
+   "tyre": 449.6,
+   "tyre_n": 21,
+   "tyre_iqr": 48.0,
+   "floor": 1479.5,
+   "contact": 1385
+  }
+ },
+ "brundle": {
+  "file": "brundle-profile-l-bluewhite_4800x1800.webp",
+  "W": 4800,
+  "H": 1800,
+  "front": {
+   "cx": 1128.0,
+   "cy": 1126.3,
+   "rim": 261.9,
+   "tyre": 367.4,
+   "tyre_n": 30,
+   "tyre_iqr": 71.4,
+   "floor": 1493.7,
+   "contact": 1443
+  },
+  "rear": {
+   "cx": 3521.2,
+   "cy": 1086.8,
+   "rim": 234.5,
+   "tyre": 368.4,
+   "tyre_n": 30,
+   "tyre_iqr": 143.0,
+   "floor": 1455.3,
+   "contact": 1427
+  }
+ },
+ "thermal": {
+  "file": "thermal-profile-l-white_1400x466.png",
+  "W": 1400,
+  "H": 466,
+  "front": {
+   "cx": 318.9,
+   "cy": 305.7,
+   "rim": 78.1,
+   "tyre": 112.9,
+   "tyre_n": 28,
+   "tyre_iqr": 44.5,
+   "floor": 418.6,
+   "contact": 402
+  },
+  "rear": {
+   "cx": 1041.5,
+   "cy": 307.3,
+   "rim": 78.8,
+   "tyre": 103.4,
+   "tyre_n": 28,
+   "tyre_iqr": 32.0,
+   "floor": 410.7,
+   "contact": 407
+  }
+ },
+ "endgame": {
+  "file": "endgame-profile-l-deepred_4800x1411.png",
+  "W": 4800,
+  "H": 1411,
+  "front": {
+   "cx": 1126.9,
+   "cy": 988.3,
+   "rim": 269.6,
+   "tyre": 385.5,
+   "tyre_n": 24,
+   "tyre_iqr": 62.2,
+   "floor": 1373.8,
+   "contact": 1322
+  },
+  "rear": {
+   "cx": 3615.5,
+   "cy": 977.7,
+   "rim": 270.1,
+   "tyre": 370.0,
+   "tyre_n": 27,
+   "tyre_iqr": 48.0,
+   "floor": 1347.7,
+   "contact": 1319
+  }
+ }
+}

@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gunther Werks Miami — Concept E</title>
+<meta name="description" content="Gunther Werks Miami, the official Gunther Werks dealer in Miami, by Prestige Imports.">
+<link rel="icon" href="assets/logos/gw-mark.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Instrument+Sans:wdth,wght@75..100,400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="vendor/lenis.css">
+<link rel="stylesheet" href="concept-e.css?v=32">
+<script>
+  (function () {
+    var d = document.documentElement, q = new URLSearchParams(location.search);
+    d.style.setProperty('--vh', innerHeight + 'px');
+    d.style.setProperty('--vw', d.clientWidth + 'px');
+    if (q.has('full')) d.classList.add('full', 'static');
+    var st = (q.get('state') || '').split(',').filter(Boolean);
+    if (st.length) d.classList.add('static');
+    st.forEach(function (s) { d.classList.add('st-' + s); });
+    d.classList.add('js');
+  })();
+</script>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <!-- The X key (GW's company key, "a symbol of every door that closed"): a solid disc with four slots cut at N, E, S, W.
+         The remaining material reads as an X; turned 45° it reads as a "+". Never a stroked ⊗ (that would read as "close"). -->
+    <mask id="key-cut" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+      <rect width="24" height="24" fill="#fff"/>
+      <g fill="#000" stroke="#000" stroke-width="1.6" stroke-linejoin="round">
+        <path d="M12 8.6 6.6-1h10.8Z"/><path d="M12 8.6 6.6-1h10.8Z" transform="rotate(90 12 12)"/><path d="M12 8.6 6.6-1h10.8Z" transform="rotate(180 12 12)"/><path d="M12 8.6 6.6-1h10.8Z" transform="rotate(270 12 12)"/>
+      </g>
+      <circle cx="12" cy="12" r="1.7" fill="#000"/>
+    </mask>
+  </defs>
+  <symbol id="key" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="currentColor" mask="url(#key-cut)"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 16 16"><path d="M5.6 2.5 3.4 3.2c-.6.2-1 .9-.8 1.6 1.3 4.4 4.2 7.3 8.6 8.6.7.2 1.4-.2 1.6-.8l.7-2.2-2.9-1.4-1.3 1.3C7.7 9.6 6.4 8.3 5.7 6.7L7 5.4 5.6 2.5Z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></symbol>
+  <symbol id="i-play" viewBox="0 0 16 16"><path d="M5.5 3.8v8.4L12 8 5.5 3.8Z" fill="currentColor"/></symbol>
+  <symbol id="i-pause" viewBox="0 0 16 16"><path d="M5 3.5h2v9H5zM9 3.5h2v9H9z" fill="currentColor"/></symbol>
+  <symbol id="i-x" viewBox="0 0 16 16"><path d="M3.5 3.5l9 9m0-9-9 9" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></symbol>
+</svg>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ============ HEADER — one glass bar: clear over the hero, fogs on scroll, milk over light screens ============ -->
+<header class="hd" role="banner">
+  <div class="hd__bar">
+    <a class="hd__brand" href="#top" aria-label="Gunther Werks Miami, home">
+      <img class="hd__logo hd__logo--w" src="assets/logos/gunther-werks-logo-white.svg" alt="Gunther Werks" width="150" height="16">
+      <img class="hd__logo hd__logo--k" src="assets/logos/gunther-werks-logo.svg" alt="" width="150" height="16">
+      <span class="hd__city">Miami</span>
+    </a>
+    <nav class="hd__nav" aria-label="Primary">
+      <span class="hd__pool" aria-hidden="true"></span>
+      <a href="#programs">Programs</a>
+      <a href="#heritage">Heritage</a>
+      <a href="#commission">Ownership</a>
+      <a href="#provenance">Provenance</a>
+      <a href="#news">News</a>
+      <a href="#miami">Miami</a>
+    </nav>
+    <div class="hd__end">
+      <a class="btn btn--lit btn--sm hd__enq" href="#enquire"><span>Enquire</span></a>
+      <button class="btn btn--clear btn--sm hd__menu" type="button" aria-expanded="false" aria-controls="menu"><span>Menu</span></button>
+    </div>
+  </div>
+</header>
+
+<!-- menu (≤1279): a bottom glass sheet -->
+<div class="menu" id="menu" hidden>
+  <div class="menu__dim" data-mclose></div>
+  <div class="menu__sheet glass glass--smoke" role="dialog" aria-modal="true" aria-label="Menu">
+    <span class="menu__grab" aria-hidden="true"></span>
+    <button class="menu__close" type="button" data-mclose>Close</button>
+    <nav class="menu__nav" aria-label="Menu">
+      <a href="#programs">Programs</a><a href="#heritage">Heritage</a><a href="#commission">Ownership</a><a href="#provenance">Provenance</a><a href="#news">News</a><a href="#miami">Miami</a>
+    </nav>
+    <div class="menu__foot">
+      <p>Prestige Imports · 15050 Biscayne Blvd, North Miami Beach, FL 33181</p>
+      <p>Javier Roque · <a href="tel:+13057836493">(305) 783-6493</a> · <a href="mailto:Javier@PrestigeImports.com">Javier@PrestigeImports.com</a></p>
+      <a class="btn btn--lit btn--block" href="#enquire"><span>Enquire</span></a>
+    </div>
+  </div>
+</div>
+
+<main id="main">
+
+<!-- ============ 1 · HERO ============ -->
+<section class="scr hero" id="top" aria-labelledby="h-hero">
+  <div class="hero__media"><img class="bg" src="assets/hero.jpg" alt="An orange Gunther Werks Turbo head-on inside the Gunther Werks showroom in Huntington Beach." width="2560" height="1707" fetchpriority="high"></div>
+  <div class="hero__copy">
+    <p class="kick">Official Gunther Werks dealer</p>
+    <h1 id="h-hero" class="t-display" data-lines><span class="ln">Gunther Werks</span> <span class="ln">Miami.</span> <span class="ln">Reengineered and remastered.</span></h1>
+    <div class="acts">
+      <a class="btn btn--clear" href="#enquire"><span>Book a private viewing</span></a>
+      <a class="go" href="#programs"><span>Explore the programs</span><i aria-hidden="true"></i></a>
+    </div>
+  </div>
+  <p class="photo-cap">Turbo · Gunther Werks atelier, Huntington Beach</p>
+</section>
+
+<!-- ============ 2 · STATEMENT — a milk-glass pane rises over the hero; the words focus inside it ============ -->
+<section class="scr panel" aria-labelledby="h-panel">
+  <div class="panel__scene" aria-hidden="true"><img src="assets/hero.jpg" alt="" width="2560" height="1707"></div>
+  <div class="pane glass glass--milk panel__pane" data-hd="light">
+    <h2 id="h-panel" class="t-statement blurline">
+      <span class="w">We</span> <span class="w">don’t</span> <span class="w">sell</span> <span class="w">cars.</span><br>
+      <span class="w">We</span> <span class="w">deliver</span> <span class="w">dreams.</span>
+    </h2>
+    <p class="panel__src">Gunther Werks, on ownership</p>
+  </div>
+</section>
+
+<!-- ============ 3 · HERITAGE — the past regains its colour under the light ============ -->
+<section class="scr heritage" data-hd="light" id="heritage" aria-labelledby="h-her">
+  <div class="sec-top wrap">
+    <p class="kick kick--dark">Heritage · 2017 — 2026</p>
+    <h2 id="h-her" class="t-display" data-lines>Born from legacy. Driven by precision.</h2>
+  </div>
+  <div class="strip-vp">
+    <ol class="strip">
+      <li class="yc yc--w is-lit"><div class="yc__ph"><img src="assets/hist-2017.jpg" alt="A red Gunther Werks Coupe on a canyon road at golden hour." width="1400" height="836"></div>
+        <a class="yc__cap glass glass--smoke" href="#"><b class="yc__y">2017</b><span class="yc__t"><em>August · The Quail</em><strong>The first program</strong><span>Launched as the 400R. 25&nbsp;examples.</span></span></a></li>
+      <li class="yc yc--w"><div class="yc__ph"><img src="assets/hist-2025a.jpg" alt="The F-26 in profile in a dark studio cove." width="1400" height="934"></div>
+        <a class="yc__cap glass glass--smoke" href="#"><b class="yc__y">2025</b><span class="yc__t"><em>August</em><strong>F-26 revealed</strong><span>Limited to 26 examples worldwide.</span></span></a></li>
+      <li class="yc yc--w"><div class="yc__ph"><img src="assets/hist-2025b.jpg" alt="Project End Game, the final Speedster, in a studio." width="1400" height="934"></div>
+        <a class="yc__cap glass glass--smoke" href="#"><b class="yc__y">2025</b><span class="yc__t"><em>October</em><strong>The final Speedster</strong><span>Delivered; the warranty made retroactive.</span></span></a></li>
+      <li class="yc yc--s"><div class="yc__ph"><img src="assets/hist-2026a.jpg" alt="The F-26 on the hill at Goodwood, spectators behind the straw bales." width="1400" height="934"></div>
+        <a class="yc__cap glass glass--smoke" href="#"><b class="yc__y">2026</b><span class="yc__t"><em>July · Goodwood</em><strong>Festival of Speed</strong><span>F-26 and Turbo up the hill.</span></span></a></li>
+      <li class="yc yc--w"><div class="yc__ph"><img src="assets/hist-2026b.jpg" alt="The GXR-EVO in profile before a timber barn." width="1400" height="788"></div>
+        <a class="yc__cap glass glass--smoke" href="#"><b class="yc__y">2026</b><span class="yc__t"><em>14 August · The Quail</em><strong>GXR-EVO revealed</strong><span>15 units.</span></span></a></li>
+      <li class="yc yc--w"><div class="yc__ph"><img src="assets/hist-2026c.jpg" alt="The Brundle Edition in its blue and white livery." width="1400" height="934"></div>
+        <a class="yc__cap glass glass--smoke" href="#"><b class="yc__y">2026</b><span class="yc__t"><em>21 October</em><strong>Brundle Edition</strong><span>Announced. Five examples.</span></span></a></li>
+    </ol>
+  </div>
+  <div class="ltrack ltrack--light wrap" data-of="6">
+    <button class="disc disc--milk ltrack__prev" type="button" aria-label="Previous milestone"><i aria-hidden="true"></i></button>
+    <span class="ltrack__line" aria-hidden="true"><i></i></span>
+    <span class="ltrack__n" aria-live="polite"><b>01</b> / 06</span>
+    <button class="disc disc--milk ltrack__next" type="button" aria-label="Next milestone"><i aria-hidden="true"></i></button>
+  </div>
+</section>
+
+<!-- ============ 4 · THE SHOWROOM AT NIGHT — haze, not spotlight ============ -->
+<section class="scr night" id="programs" aria-labelledby="h-night">
+  <div class="grain" aria-hidden="true"></div>
+  <div class="night__head wrap">
+    <p class="kick">The collection · Ten programs</p>
+    <h2 id="h-night" class="t-display" data-lines>One commission at a time.</h2>
+  </div>
+  <div class="night__grid wrap">
+    <p class="tier">Standard</p>
+    <ul class="row" role="list">
+      <li class="car is-lit" data-k="f26"><button type="button" aria-pressed="true" aria-label="F-26, limited to 26 examples. See what the atelier changed"><span class="haze" aria-hidden="true"></span><span class="car__stack"><img class="car__c" src="assets/cut-f26-800.webp" alt="" width="800" height="268"><img class="car__g" src="assets/cut-f26-800.webp" alt="" width="800" height="268"></span><img class="car__ref" src="assets/cut-f26-800.webp" alt="" width="800" height="268"><b class="num">26</b><span class="nm">F-26</span></button></li>
+      <li class="car" data-k="turbo"><button type="button" aria-pressed="false" aria-label="Turbo, limited to 75 examples"><span class="haze" aria-hidden="true"></span><span class="car__stack"><img class="car__c" src="assets/cut-turbo-800.webp" alt="" width="800" height="269"><img class="car__g" src="assets/cut-turbo-800.webp" alt="" width="800" height="269"></span><img class="car__ref" src="assets/cut-turbo-800.webp" alt="" width="800" height="269"><b class="num">75</b><span class="nm">Turbo</span></button></li>
+      <li class="car" data-k="gwr"><button type="button" aria-pressed="false" aria-label="GWR, limited to 40 examples"><span class="haze" aria-hidden="true"></span><span class="car__stack"><img class="car__c" src="assets/cut-gwr-800.webp" alt="" width="800" height="269"><img class="car__g" src="assets/cut-gwr-800.webp" alt="" width="800" height="269"></span><img class="car__ref" src="assets/cut-gwr-800.webp" alt="" width="800" height="269"><b class="num">40</b><span class="nm">GWR</span></button></li>
+      <li class="car" data-k="gwx"><button type="button" aria-pressed="false" aria-label="GWX, by invitation only"><span class="haze" aria-hidden="true"></span><span class="car__stack"><img class="car__c" src="assets/cut-gwx-800.webp" alt="" width="800" height="258"><img class="car__g" src="assets/cut-gwx-800.webp" alt="" width="800" height="258"></span><img class="car__ref" src="assets/cut-gwx-800.webp" alt="" width="800" height="258"><b class="num num--inv"><i class="lamp lamp--gold" aria-hidden="true"></i>By invitation</b><span class="nm">GWX</span></button></li>
+    </ul>
+    <p class="tier">Special editions</p>
+    <ul class="row" role="list">
+      <li class="car" data-k="gxr"><button type="button" aria-pressed="false" aria-label="GXR-EVO, limited to 15 units"><span class="haze" aria-hidden="true"></span><span class="car__stack"><img class="car__c" src="assets/cut-gxr-800.webp" alt="" width="800" height="252"><img class="car__g" src="assets/cut-gxr-800.webp" alt="" width="800" height="252"></span><img class="car__ref" src="assets/cut-gxr-800.webp" alt="" width="800" height="252"><b class="num">15</b><span class="nm">GXR-EVO</span></button></li>
+      <li class="car" data-k="brundle"><button type="button" aria-pressed="false" aria-label="Brundle Edition, five examples"><span class="haze" aria-hidden="true"></span><span class="car__stack"><img class="car__c" src="assets/cut-brundle-800.webp" alt="" width="800" height="225"><img class="car__g" src="assets/cut-brundle-800.webp" alt="" width="800" height="225"></span><img class="car__ref" src="assets/cut-brundle-800.webp" alt="" width="800" height="225"><b class="num">5</b><span class="nm">Brundle Edition</span></button></li>
+      <li class="car" data-k="thermal"><button type="button" aria-pressed="false" aria-label="Thermal Edition, five examples"><span class="haze" aria-hidden="true"></span><span class="car__stack"><img class="car__c" src="assets/cut-thermal-800.webp" alt="" width="800" height="253"><img class="car__g" src="assets/cut-thermal-800.webp" alt="" width="800" height="253"></span><img class="car__ref" src="assets/cut-thermal-800.webp" alt="" width="800" height="253"><b class="num">5</b><span class="nm">Thermal Edition</span></button></li>
+      <li class="car" data-k="endgame"><button type="button" aria-pressed="false" aria-label="Project End Game, one of one"><span class="haze" aria-hidden="true"></span><span class="car__stack"><img class="car__c" src="assets/cut-endgame-800.webp" alt="" width="800" height="242"><img class="car__g" src="assets/cut-endgame-800.webp" alt="" width="800" height="242"></span><img class="car__ref" src="assets/cut-endgame-800.webp" alt="" width="800" height="242"><b class="num">1</b><span class="nm">End Game</span></button></li>
+    </ul>
+    <p class="tier">Legacy</p>
+    <ul class="row" role="list">
+      <li class="car car--legacy" data-k="coupe"><button type="button" aria-pressed="false" aria-label="Coupe, 25 examples, completed program"><span class="haze" aria-hidden="true"></span><span class="car__stack"><img class="car__c" src="assets/cut-coupe-800.webp" alt="" width="800" height="257"><img class="car__g" src="assets/cut-coupe-800.webp" alt="" width="800" height="257"></span><img class="car__ref" src="assets/cut-coupe-800.webp" alt="" width="800" height="257"><b class="num">25</b><span class="nm">Coupe</span></button></li>
+      <li class="car car--legacy" data-k="speedster"><button type="button" aria-pressed="false" aria-label="Speedster, 25 examples, completed program"><span class="haze" aria-hidden="true"></span><span class="car__stack"><img class="car__c" src="assets/cut-speedster-800.webp" alt="" width="800" height="240"><img class="car__g" src="assets/cut-speedster-800.webp" alt="" width="800" height="240"></span><img class="car__ref" src="assets/cut-speedster-800.webp" alt="" width="800" height="240"><b class="num">25</b><span class="nm">Speedster</span></button></li>
+      <li class="row__note">Completed programs. Each built on a Porsche 993, the final air-cooled generation.</li>
+    </ul>
+  </div>
+  <div class="night__rail wrap">
+    <p class="rail__now" aria-live="polite"><span class="js-rail">F-26 · Limited to 26 examples worldwide</span> <a class="go js-rail-go" href="#atelier"><span>View</span><i aria-hidden="true"></i></a></p>
+    <span class="ltrack__line" aria-hidden="true"><i></i></span>
+  </div>
+</section>
+
+<!-- ============ 5 · THE STUDIO — programs and special editions on one stage; light blooms, the name is etched in glass ============ -->
+<section class="scr studio" id="studio" aria-labelledby="h-studio">
+  <div class="studio__cove" aria-hidden="true"><img class="cove is-on" src="assets/cove-f26.jpg" alt=""><img class="cove" src="assets/cove-f26.jpg" alt=""></div>
+  <p class="studio__name" aria-hidden="true"><span>F-26</span></p>
+  <figure class="studio__car">
+    <div class="car-stack">
+      <img class="car-img is-on" src="assets/cut-f26-2400.webp" alt="The Gunther Werks F-26 in side profile." width="2400" height="803">
+      <img class="car-img" src="assets/cut-f26-2400.webp" alt="" width="2400" height="803">
+    </div>
+    <img class="car-ref" src="assets/cut-f26-2400.webp" alt="" width="2400" height="803" aria-hidden="true">
+  </figure>
+  <div class="studio__meta">
+    <p class="kick"><i class="lamp js-lamp" aria-hidden="true"></i><span class="js-kick">Standard program · 01 / 04</span></p>
+    <h2 id="h-studio" class="t-title js-name">F-26</h2>
+    <p class="studio__line js-line">The future of analog power. Limited to 26 examples worldwide.</p>
+    <a class="go studio__enq" href="#enquire"><span class="js-enq">Enquire about the F-26</span><i aria-hidden="true"></i></a>
+  </div>
+  <div class="dock">
+    <div class="track glass glass--smoke" role="tablist" aria-label="Programs and special editions">
+      <span class="track__pool" aria-hidden="true"></span>
+      <button role="tab" aria-selected="true" class="is-on" data-k="f26">F-26</button>
+      <button role="tab" aria-selected="false" tabindex="-1" data-k="turbo">Turbo</button>
+      <button role="tab" aria-selected="false" tabindex="-1" data-k="gwr">GWR</button>
+      <button role="tab" aria-selected="false" tabindex="-1" data-k="gwx">GWX</button>
+      <span class="track__div" aria-hidden="true"></span>
+      <button role="tab" aria-selected="false" tabindex="-1" data-k="gxr">GXR-EVO</button>
+      <button role="tab" aria-selected="false" tabindex="-1" data-k="brundle">Brundle</button>
+      <button role="tab" aria-selected="false" tabindex="-1" data-k="thermal">Thermal</button>
+      <button role="tab" aria-selected="false" tabindex="-1" data-k="endgame">End Game</button>
+      <span class="track__div" aria-hidden="true"></span>
+      <a class="track__go" href="#atelier" data-details>Explore details<i aria-hidden="true"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 6 · WHAT THE ATELIER CHANGED — the key opens the car ============ -->
+<section class="scr atelier" data-hd="light" id="atelier" aria-labelledby="h-atelier">
+  <div class="stage" data-k="f26">
+    <img class="stage__img is-on" src="assets/det-f26.jpg" alt="The F-26 in side profile in a warm grey studio cove." width="2560" height="1440">
+    <img class="stage__img" src="assets/det-f26.jpg" alt="" width="2560" height="1440">
+    <svg class="leaders" aria-hidden="true"></svg>
+    <div class="spots">
+      <div class="spot" style="--x:.195;--y:.56;--cx:.12;--cy:.76"><button class="key" type="button" aria-expanded="false" aria-label="Slantnose front, open detail"><svg aria-hidden="true"><use href="#key"/></svg></button>
+        <div class="hc glass glass--smoke"><span class="hc__t"><b>Slantnose front</b><span>A tribute to the 930 Flachbau</span></span><i class="pm" aria-hidden="true"></i></div></div>
+      <div class="spot is-open has-ph" style="--x:.755;--y:.47;--cx:.585;--cy:.115"><button class="key" type="button" aria-expanded="true" aria-label="Engine, open detail"><svg aria-hidden="true"><use href="#key"/></svg></button>
+        <div class="hc glass glass--smoke"><span class="hc__ph"><img src="assets/mac-engine.jpg" alt="The F-26 engine: twin-turbo 4.0 with carbon intake plumbing." width="900" height="900"></span><span class="hc__t"><b>Engine</b><span>Twin-turbocharged 4.0-litre flat-six, co&#8209;developed with Rothsport Racing. 1,000 hp, six-speed manual.</span><em>Gunther Werks F-26 release, 15 Aug 2025</em></span><i class="pm" aria-hidden="true"></i></div></div>
+    </div>
+  </div>
+  <div class="atelier__head">
+    <p class="kick kick--dark">What the atelier changed</p>
+    <h2 id="h-atelier" class="t-display js-aname">F-26</h2>
+  </div>
+  <div class="atelier__acts">
+    <a class="go" href="#sheet" data-sheet><span class="js-sheet">Explore the F-26</span><i aria-hidden="true"></i></a>
+    <button class="go go--btn atelier__view" type="button" aria-pressed="false"><span>View the car</span></button>
+  </div>
+  <div class="dock">
+    <div class="track glass glass--smoke" role="tablist" aria-label="Programs">
+      <span class="track__pool" aria-hidden="true"></span>
+      <button role="tab" aria-selected="true" class="is-on" data-k="f26">F-26</button>
+      <button role="tab" aria-selected="false" tabindex="-1" data-k="turbo">Turbo</button>
+      <button role="tab" aria-selected="false" tabindex="-1" data-k="gwr">GWR</button>
+      <button role="tab" aria-selected="false" tabindex="-1" data-k="gwx">GWX</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 8 · GOODWOOD — the peak: the film, scrubbed ============ -->
+<section class="scr gw" id="goodwood" aria-labelledby="h-gw">
+  <div class="gw__still"><img class="bg" src="assets/goodwood.jpg" alt="The F-26 spitting flames at the Goodwood start line, a marshal beside it." width="2560" height="1707"></div>
+  <canvas class="gw__film" aria-hidden="true"></canvas>
+  <div class="gw__copy">
+    <p class="kick gw__c gw__c1">Goodwood Festival of Speed · July 2026</p>
+    <h2 id="h-gw" class="gw__fig gw__c gw__c2">1,000<span>hp</span></h2>
+    <p class="gw__src gw__c gw__c2">Power: Gunther Werks F-26 release, 15 Aug 2025</p>
+    <p class="gw__line gw__c gw__c3">F-26, from the start line.</p>
+  </div>
+  <div class="film glass glass--smoke">
+    <button class="disc disc--smoke film__pp" type="button" aria-label="Pause the film" aria-pressed="false"><svg aria-hidden="true"><use href="#i-pause"/></svg></button>
+    <span class="film__t"><span class="film__lg">Goodwood Festival of Speed · </span>from the start line</span>
+    <span class="ltrack__line film__line" aria-hidden="true"><i></i></span>
+  </div>
+</section>
+
+<!-- ============ 9 · THE COMMISSION — five stages, one axis ============ -->
+<section class="scr comm" id="commission" aria-labelledby="h-comm">
+  <div class="comm__head">
+    <p class="kick">The commission</p>
+    <h2 id="h-comm" class="t-display" data-lines>Every step, from initial inquiry to delivery day.</h2>
+    <div class="track glass glass--smoke comm__track" role="tablist" aria-label="The commission, step by step">
+      <span class="track__pool" aria-hidden="true"></span>
+      <button role="tab" aria-selected="false" tabindex="-1" data-i="0">Application</button>
+      <button role="tab" aria-selected="false" tabindex="-1" data-i="1">Customization</button>
+      <button role="tab" aria-selected="false" tabindex="-1" data-i="2">The build</button>
+      <button role="tab" aria-selected="true" class="is-on" data-i="3">Delivery</button>
+      <button role="tab" aria-selected="false" tabindex="-1" data-i="4">Ownership</button>
+    </div>
+  </div>
+  <figure class="comm__ph">
+    <img class="is-on" src="assets/com-dinner.jpg" alt="A long-table dinner in a barrel room, a Gunther Werks 4.0 engine on a stand as the centrepiece." width="1800" height="1200">
+    <img src="assets/com-dinner.jpg" alt="" width="1800" height="1200">
+    <figcaption class="comm__cap glass glass--smoke" aria-live="polite">
+      <p class="comm__n"><b>04</b> / 05 · <span class="js-step">Delivery</span></p>
+      <h3 class="js-title">A meal, then the billet key.</h3>
+      <p class="js-text">On the day you collect your car, a meal is prepared for you by one of the finest chefs at the Huntington Beach facility, your car behind you. Then the billet key is placed in your hand.</p>
+      <p class="comm__src js-src">Gunther Werks, Ownership</p>
+    </figcaption>
+  </figure>
+</section>
+
+<!-- ============ 10 · PROVENANCE SUCCESSION — the car turns ============ -->
+<section class="scr psp" data-hd="light" id="provenance" aria-labelledby="h-psp">
+  <div class="psp__text">
+    <p class="kick kick--dark">Certified pre-owned</p>
+    <h2 id="h-psp" class="t-display" data-lines>Provenance Succession</h2>
+    <p class="t-bodyl">Curated builds, factory re&#8209;validated for their next steward.</p>
+    <p class="t-body">Each car returns to Huntington Beach for a comprehensive diagnostic re-validation before it is delivered, with succession coverage topped to a minimum of 3 years or 100,000 miles.</p>
+    <a class="go go--dark" href="#enquire"><span>Ask about Provenance Succession</span><i aria-hidden="true"></i></a>
+  </div>
+  <div class="viewer" tabindex="0" role="group" aria-roledescription="walk-around" aria-label="Phoenix, angle 4 of 10. Drag or use the arrow keys to turn the car.">
+    <img class="viewer__img" src="assets/psp/phoenix-04.jpg" alt="Phoenix, a yellow Gunther Werks Speedster, in a grey studio." width="1600" height="1067" draggable="false">
+    <p class="vcap glass glass--smoke"><b class="js-pname">Phoenix</b><span class="js-pspec">Speedster · 435+ bhp</span></p>
+    <div class="walk glass glass--smoke">
+      <button class="disc disc--smoke walk__prev" type="button" aria-label="Turn left"><i aria-hidden="true"></i></button>
+      <span class="ltrack__line walk__line" aria-hidden="true"><i></i></span>
+      <span class="walk__n"><b>04</b> / 10</span>
+      <span class="walk__hint">Drag to turn</span>
+      <button class="disc disc--smoke walk__next" type="button" aria-label="Turn right"><i aria-hidden="true"></i></button>
+    </div>
+  </div>
+  <button class="pcard pcard--1" type="button" data-set="bluephoenix"><img src="assets/psp/bluephoenix-05.jpg" alt="" width="1600" height="1067"><span class="pcard__cap glass glass--smoke"><b>Blue Phoenix</b><span>Speedster · 445+ bhp</span><span class="go go--sm"><span>Turn this car</span><i></i></span></span></button>
+  <button class="pcard pcard--2" type="button" data-set="rubystone"><img src="assets/psp/rubystone-02.jpg" alt="" width="1600" height="1067"><span class="pcard__cap glass glass--smoke"><b>Rubystone</b><span>Coupe · 435+ bhp</span><span class="go go--sm"><span>Turn this car</span><i></i></span></span></button>
+</section>
+
+<!-- ============ 11 · CLOSING LINE ============ -->
+<section class="scr road" aria-labelledby="h-road">
+  <div class="road__media"><img class="bg" src="assets/road.jpg" alt="An orange Turbo on a circuit at sunset under a pink sky." width="2560" height="1440"></div>
+  <h2 id="h-road" class="t-statement road__stmt" data-lines>Designed for pleasure.</h2>
+</section>
+
+<!-- ============ 12 · NEWS & EVENTS ============ -->
+<section class="news" id="news" aria-labelledby="h-news">
+  <div class="news__head wrap">
+    <h2 id="h-news" class="t-display" data-lines>News &amp; events</h2>
+    <a class="go" href="#"><span>All news</span><i aria-hidden="true"></i></a>
+  </div>
+  <div class="jvp" tabindex="0" aria-label="News, scroll sideways">
+    <ul class="jstrip" role="list">
+      <li><a class="jc" href="#"><span class="jc__ph"><img src="assets/nw-brundle.jpg" alt="" width="1000" height="667"></span><span class="jc__cap glass glass--smoke"><em>Press release · 21 Oct 2026</em><b>Gunther Werks unveils a collaboration with racing legend Martin Brundle</b><span class="go go--sm"><span>Read the release</span><i></i></span></span></a></li>
+      <li><a class="jc" href="#"><span class="jc__ph"><img src="assets/nw-gxr.jpg" alt="" width="1000" height="667"></span><span class="jc__cap glass glass--smoke"><em>Press release · 14 Aug 2026</em><b>The GXR-EVO revealed at The Quail</b><span class="go go--sm"><span>Read the release</span><i></i></span></span></a></li>
+      <li><a class="jc" href="#"><span class="jc__ph"><img src="assets/nw-carweek.jpg" alt="" width="1000" height="562"></span><span class="jc__cap glass glass--smoke"><em>Event · 13–15 Aug 2026</em><b>Monterey Car Week at GW Haus, Carmel Valley</b><span class="go go--sm"><span>See the event</span><i></i></span></span></a></li>
+      <li><a class="jc" href="#"><span class="jc__ph"><img src="assets/nw-robb.jpg" alt="" width="1000" height="562"></span><span class="jc__cap glass glass--smoke"><em>Robb Report · 29 Jul 2026</em><b>F-26 named Restomod of the Year</b><span class="go go--sm"><span>Read on Robb Report</span><i></i></span></span></a></li>
+      <li><a class="jc" href="#"><span class="jc__ph"><img src="assets/nw-topgear.jpg" alt="" width="1000" height="562"></span><span class="jc__cap glass glass--smoke"><em>Top Gear · 20 Jul 2026</em><b>F-26 first drive</b><span class="go go--sm"><span>Read on Top Gear</span><i></i></span></span></a></li>
+    </ul>
+  </div>
+  <div class="ltrack wrap" data-of="5">
+    <button class="disc disc--smoke ltrack__prev" type="button" aria-label="Previous story"><i aria-hidden="true"></i></button>
+    <span class="ltrack__line" aria-hidden="true"><i></i></span>
+    <span class="ltrack__n"><b>01</b> / 05</span>
+    <button class="disc disc--smoke ltrack__next" type="button" aria-label="Next story"><i aria-hidden="true"></i></button>
+  </div>
+</section>
+
+<!-- ============ 13 · MIAMI — the milk pane returns with the enquiry ============ -->
+<section class="scr mia" id="miami" aria-labelledby="h-mia">
+  <div class="mia__scene" aria-hidden="true"><img src="assets/miami-scene.jpg" alt="" width="2560" height="1440"></div>
+  <div class="pane glass glass--milk mia__pane" data-hd="light">
+    <div class="mia__text">
+      <p class="kick kick--dark">Gunther Werks Miami · Prestige Imports</p>
+      <h2 id="h-mia" class="t-display" data-lines>Begin your Gunther Werks journey.</h2>
+      <p class="t-bodyl mia__lead">Your commission is guided from Miami by Prestige Imports, an official Gunther Werks dealer — from the first enquiry to delivery day.</p>
+      <address class="mia__addr">
+        <p><b>Showroom</b>Prestige Imports<br>15050 Biscayne Blvd<br>North Miami Beach, FL 33181</p>
+        <p><b>Your contact</b>Javier Roque<br><a href="tel:+13057836493">(305) 783-6493</a><br><a href="mailto:Javier@PrestigeImports.com">Javier@PrestigeImports.com</a></p>
+      </address>
+      <a class="go go--dark go--ext" href="https://maps.google.com/?q=15050+Biscayne+Blvd,+North+Miami+Beach,+FL+33181"><span>Directions</span><i aria-hidden="true"></i></a>
+    </div>
+    <form class="form" id="enquire" aria-labelledby="h-form" novalidate>
+      <h3 id="h-form" class="t-title">Private enquiry</h3>
+      <div class="fld">
+        <span id="intent-l">I would like to</span>
+        <div class="track track--milk glass glass--milk" role="radiogroup" aria-labelledby="intent-l">
+          <span class="track__pool" aria-hidden="true"></span>
+          <button type="button" role="radio" aria-checked="true" class="is-on" data-v="commission" aria-label="Discuss a commission"><span class="lg">Discuss a commission</span><span class="sm">Commission</span></button>
+          <button type="button" role="radio" aria-checked="false" tabindex="-1" data-v="psp" aria-label="Provenance Succession"><span class="lg">Provenance Succession</span><span class="sm">Provenance</span></button>
+          <button type="button" role="radio" aria-checked="false" tabindex="-1" data-v="viewing" aria-label="Private viewing"><span class="lg">Private viewing</span><span class="sm">Viewing</span></button>
+        </div>
+      </div>
+      <label class="fld"><span>Program</span><span class="sel"><select name="program"><option value="f26">F-26</option><option value="turbo">Turbo</option><option value="gwr">GWR</option><option value="gwx">GWX</option><option value="gxr">GXR-EVO</option><option value="brundle">Brundle Edition</option><option value="thermal">Thermal Edition</option><option value="endgame">End Game</option><option value="unsure">Not sure yet</option></select></span></label>
+      <div class="fld-row">
+        <label class="fld"><span>Name</span><input name="name" type="text" autocomplete="name" required aria-describedby="e-name"><em class="err" id="e-name">Error: please enter your name.</em></label>
+        <label class="fld"><span>Phone (optional)</span><input name="tel" type="tel" autocomplete="tel"></label>
+      </div>
+      <label class="fld"><span>Email</span><input name="email" type="email" autocomplete="email" required aria-describedby="e-email"><em class="err" id="e-email">Error: please enter an email address we can reply to.</em></label>
+      <label class="fld"><span>Message (optional)</span><textarea name="msg" rows="2"></textarea></label>
+      <div class="form__end">
+        <label class="chk"><input type="checkbox" name="ok" required><i aria-hidden="true"></i><span>I agree to be contacted by Prestige Imports about Gunther Werks. <a href="#">Privacy</a></span></label>
+        <button class="btn btn--lit btn--onlight" type="submit"><span class="btn__t">Send enquiry</span></button>
+      </div>
+      <p class="form__note" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER — plain type on night; the X key as the mark ============ -->
+<footer class="ft" role="contentinfo">
+  <div class="ft__top wrap">
+    <img src="assets/logos/gunther-werks-logo-white.svg" alt="Gunther Werks" width="360" height="39">
+    <p class="ft__city">Miami <span>· Prestige Imports</span></p>
+  </div>
+  <div class="ft__grid wrap">
+    <ul class="ft__big" role="list">
+      <li><a href="#programs">Programs</a></li><li><a href="#heritage">Heritage</a></li><li><a href="#provenance">Provenance</a></li><li><a href="#news">News</a></li><li><a href="#miami">Miami</a></li>
+    </ul>
+    <div class="ft__col"><p class="ft__h">Programs</p><ul role="list"><li><a href="#studio">F-26</a></li><li><a href="#studio">Turbo</a></li><li><a href="#studio">GWR</a></li><li><a href="#studio">GWX</a></li><li><a href="#studio">GXR-EVO</a></li><li><a href="#studio">Brundle Edition</a></li><li><a href="#studio">Thermal Edition</a></li><li><a href="#programs">Legacy: Coupe, Speedster</a></li></ul></div>
+    <div class="ft__col"><p class="ft__h">Ownership</p><ul role="list"><li><a href="#commission">The commission</a></li><li><a href="#commission">Delivery</a></li><li><a href="#commission">5-year warranty</a></li><li><a href="#provenance">Provenance Succession</a></li></ul></div>
+    <div class="ft__col"><p class="ft__h">Dealer</p><ul role="list"><li>Prestige Imports</li><li>15050 Biscayne Blvd</li><li>North Miami Beach, FL 33181</li><li>Javier Roque</li><li><a href="tel:+13057836493">(305) 783-6493</a></li><li><a href="mailto:Javier@PrestigeImports.com">Javier@PrestigeImports.com</a></li></ul></div>
+    <div class="ft__col"><p class="ft__h">Follow Gunther Werks</p><ul role="list"><li><a href="https://instagram.com/guntherwerks">Instagram</a></li><li><a href="https://youtube.com/@guntherwerks">YouTube</a></li><li><a href="https://www.facebook.com/guntherwerksna">Facebook</a></li></ul></div>
+  </div>
+  <div class="ft__mark wrap">
+    <svg class="ft__key" aria-hidden="true"><use href="#key"/></svg>
+    <p>“The company key was designed in an ‘X’ pattern — a symbol of every door that closed.” <span>Gunther Werks, Our Story</span></p>
+  </div>
+  <div class="ft__legal wrap">
+    <p>© 2026 Prestige Imports · <a href="#">Privacy</a> · <a href="#">Accessibility</a> · <a href="#">Cookie settings</a></p>
+    <p class="ft__small">Gunther Werks Miami is presented by Prestige Imports, an official Gunther Werks dealer. Gunther Werks’ services are provided solely by Gunther Werks. This site is not affiliated with, associated with, or endorsed by Porsche. Porsche and all Porsche model names are registered trademarks of Dr. Ing. h.c. F. Porsche AG.</p>
+  </div>
+</footer>
+
+<!-- ============ PROGRAM SHEET ============ -->
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="h-sheet" hidden>
+  <div class="sheet__veil" data-close></div>
+  <div class="sheet__grid">
+    <article class="sheet__main glass glass--smoke">
+      <p class="kick js-skick">Standard program · 01 / 04</p>
+      <h3 id="h-sheet" class="t-display sheet__name js-sname">F-26</h3>
+      <p class="sheet__desc js-sdesc">Sculpted entirely from carbon fibre, its front end a tribute to the Porsche 930 Flachbau and 935 racers. At the rear, a 4.0-litre flat-six co&#8209;developed with Rothsport Racing.</p>
+      <dl class="specs js-specs"></dl>
+      <p class="sheet__src js-ssrc"></p>
+    </article>
+    <figure class="sheet__film glass glass--smoke">
+      <video class="js-svid" src="assets/sheet-f26.mp4" poster="assets/sheet-f26-poster.jpg" muted loop playsinline preload="none" aria-label="The F-26 at Goodwood"></video>
+      <img class="js-simg" src="assets/sheet-gwr.jpg" alt="" hidden>
+      <figcaption class="film glass glass--smoke"><svg aria-hidden="true"><use href="#i-play"/></svg><span class="film__t js-scap">Goodwood Festival of Speed · from the start line</span></figcaption>
+    </figure>
+    <div class="sheet__card glass glass--smoke sheet__card--a">
+      <p class="kick">Begin your commission</p>
+      <a class="row-go" href="#enquire" data-close><span>Private enquiry</span><i aria-hidden="true"></i></a>
+      <a class="row-go" href="#enquire" data-close><span>Book a private viewing</span><i aria-hidden="true"></i></a>
+      <p class="sheet__who">Javier Roque · Prestige Imports · (305) 783-6493</p>
+    </div>
+    <div class="sheet__card glass glass--smoke sheet__card--b">
+      <p class="kick">Latest news</p>
+      <div class="js-snews"></div>
+    </div>
+  </div>
+  <button class="sheet__x" type="button" data-close><span>Close</span><span class="disc disc--smoke"><svg aria-hidden="true"><use href="#i-x"/></svg></span></button>
+</div>
+
+<div class="ghost" aria-hidden="true"></div>
+
+<script src="vendor/gsap.min.js"></script>
+<script src="vendor/ScrollTrigger.min.js"></script>
+<script src="vendor/lenis.min.js"></script>
+<script src="e.js?v=32"></script>
+</body>
+</html>

@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en">
+<!-- deslop-ignore-file 10 — the eyebrows are section labels that match the nav and footer column heads; none restates its heading -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gunther Werks Miami · Prestige Imports</title>
+<meta name="description" content="Gunther Werks Miami — Prestige Imports, the Gunther Werks dealer for Miami. F-26, Turbo, GWR and GWX: one 993, four remasters. Contact Javier Roque, (305) 783-6493.">
+<meta name="theme-color" content="#0A0A0A">
+<link rel="icon" href="assets/gw-mark.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cabin:wght@400;500;600&display=swap">
+<link rel="preload" as="image" href="assets/hero-f26-2880.avif" type="image/avif" media="(min-aspect-ratio: 1/1) and (min-width: 1440px)">
+<link rel="preload" as="image" href="assets/hero-f26-1920.avif" type="image/avif" media="(min-aspect-ratio: 1/1) and (max-width: 1439.98px)">
+<link rel="preload" as="image" href="assets/hero-f26-m-1080.avif" type="image/avif" media="(max-aspect-ratio: 1/1)">
+<link rel="stylesheet" href="home.css?v=3">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+<!-- One symbol for the GW monogram, painted in currentColor wherever the chrome needs it -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="gw" viewBox="0 0 310.03 61.23"><path fill="currentColor" d="M217.58,61.23v-15.52h-39.42c-3.44,0-6.23-2.79-6.23-6.23V0h-15.52v48.76c0,6.88,5.58,12.46,12.46,12.46h48.71ZM15.52,39.48v-17.73c0-3.44,2.79-6.23,6.23-6.23h118.99v-3.05c0-6.88-5.58-12.46-12.46-12.46H12.46C5.58,0,0,5.58,0,12.46v36.3c0,6.88,5.58,12.46,12.46,12.46h128.28V22.85H26.59c-2.06,0-3.74,1.67-3.74,3.74v8.04c0,2.07,1.67,3.74,3.74,3.74h98.63v7.34H21.75c-3.44,0-6.23-2.79-6.23-6.23ZM241.28,61.23V0h-16.61v61.23h16.61ZM248.86,61.23v-15.52h39.42c3.44,0,6.23-2.79,6.23-6.23V0h15.52v48.76c0,6.88-5.58,12.46-12.46,12.46h-48.71Z"/></symbol>
+  <symbol id="out" viewBox="0 0 16 16"><path d="M5 3.5h7.5V11M12.5 3.5 3.5 12.5" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
+</svg>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- 0 · Header: transparent over the hero, scrolls away with it -->
+<header class="head" id="head">
+  <a class="head-mark" href="#top" aria-label="Gunther Werks Miami, back to top"><svg aria-hidden="true"><use href="#gw"/></svg></a>
+  <nav class="head-nav" aria-label="Primary">
+    <ul>
+      <li><a href="#programs" data-nav="programs">Programs</a></li>
+      <li><a href="#provenance">Provenance</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#miami">Miami</a></li>
+    </ul>
+  </nav>
+  <a class="head-tel" href="tel:+13057836493">(305) 783-6493</a>
+  <a class="pill" href="#enquire">Enquire</a>
+  <button class="menu-btn" type="button" aria-controls="menu" aria-expanded="false"><span>Menu</span></button>
+</header>
+
+<!-- Compact bar: solid, drops in on scroll-up below the hero -->
+<div class="bar" id="bar" aria-hidden="true">
+  <a class="head-mark" href="#top" aria-label="Gunther Werks Miami, back to top" tabindex="-1"><svg aria-hidden="true"><use href="#gw"/></svg></a>
+  <nav class="head-nav" aria-label="Primary, compact">
+    <ul>
+      <li><a href="#programs" data-nav="programs" tabindex="-1">Programs</a></li>
+      <li><a href="#provenance" tabindex="-1">Provenance</a></li>
+      <li><a href="#news" tabindex="-1">News</a></li>
+      <li><a href="#miami" tabindex="-1">Miami</a></li>
+    </ul>
+  </nav>
+  <a class="head-tel" href="tel:+13057836493" tabindex="-1">(305) 783-6493</a>
+  <a class="pill" href="#enquire" tabindex="-1">Enquire</a>
+  <button class="menu-btn" type="button" aria-controls="menu" aria-expanded="false" tabindex="-1"><span>Menu</span></button>
+</div>
+
+<!-- Mobile / tablet menu panel -->
+<div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Menu" hidden>
+  <div class="menu-top">
+    <a class="head-mark" href="#top" aria-label="Gunther Werks Miami, back to top"><svg aria-hidden="true"><use href="#gw"/></svg></a>
+    <button class="menu-close" type="button">Close</button>
+  </div>
+  <nav aria-label="Menu">
+    <ul class="menu-links">
+      <li><a href="#programs" data-nav="programs">Programs</a></li>
+      <li><a href="#provenance">Provenance</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#miami">Miami</a></li>
+      <li><a href="#enquire">Enquire</a></li>
+    </ul>
+  </nav>
+  <div class="menu-foot">
+    <p class="eyebrow">Gunther Werks Miami · Prestige Imports</p>
+    <a class="menu-tel" href="tel:+13057836493">(305) 783-6493</a>
+    <a href="mailto:Javier@PrestigeImports.com">Javier@PrestigeImports.com</a>
+    <p>Javier Roque · 15050 Biscayne Blvd, North Miami Beach, FL 33181</p>
+  </div>
+</div>
+
+<main id="main">
+
+<!-- 1 + 2 · Hero and the lineup plate share one stage: House Lights turns the first into the second -->
+<div class="hl" id="hl">
+
+  <section class="hero" id="top" aria-label="Gunther Werks Miami">
+    <picture class="hero-photo">
+      <source media="(max-aspect-ratio: 1/1)" type="image/avif" srcset="assets/hero-f26-m-720.avif 720w, assets/hero-f26-m-1080.avif 1080w" sizes="100vw">
+      <source media="(max-aspect-ratio: 1/1)" type="image/webp" srcset="assets/hero-f26-m-720.webp 720w, assets/hero-f26-m-1080.webp 1080w" sizes="100vw">
+      <source type="image/avif" srcset="assets/hero-f26-1280.avif 1280w, assets/hero-f26-1920.avif 1920w, assets/hero-f26-2880.avif 2880w" sizes="max(100vw, 177.78vh)">
+      <img src="assets/hero-f26-1920.webp" srcset="assets/hero-f26-1280.webp 1280w, assets/hero-f26-1920.webp 1920w, assets/hero-f26-2880.webp 2880w" sizes="max(100vw, 177.78vh)" width="1920" height="1080" alt="Gunther Werks F-26 in silver, in profile, in a warm studio cove." fetchpriority="high">
+    </picture>
+    <div class="hero-type">
+      <h1 class="hero-mark"><img src="assets/gunther-werks-logo-white.svg" width="792" height="86" alt="Gunther Werks Miami"></h1>
+      <p class="hero-sub">Miami · Prestige Imports</p>
+    </div>
+    <p class="hero-cap">F-26</p>
+  </section>
+
+  <section class="plate" id="programs" aria-labelledby="programs-h">
+    <div class="plate-light" aria-hidden="true"></div>
+    <div class="wrap plate-in">
+      <header class="plate-head">
+        <p class="eyebrow">Programs</p>
+        <h2 id="programs-h">One 993. Four remasters.</h2>
+        <p class="lead">The 993, the final air-cooled generation, provides the foundation.</p>
+      </header>
+
+      <ol class="row" aria-label="Current programs">
+        <li class="slot" style="--k:1.830;--fx:.2229;--cy:.2300">
+          <a class="prog" href="/programs/f-26/" data-soon aria-label="Explore F-26 — limited to 26 examples">
+            <span class="car-box">
+              <span class="car car-f26">
+                <img class="car-lit" src="assets/cut-f26-2400.webp" width="2400" height="821" alt="" decoding="async">
+                <img class="car-ns" src="assets/cut-f26-ns-2400.webp" width="2400" height="821" alt="" decoding="async">
+              </span>
+            </span>
+            <span class="cap">
+              <span class="cap-name"><span class="u">F-26</span></span>
+              <span class="cap-fig"><b>26</b><span>examples</span></span>
+              <span class="cap-desc">The future of analog power.</span>
+            </span>
+          </a>
+        </li>
+        <li class="slot" style="--k:1.8817;--fx:.2264;--cy:.2229">
+          <a class="prog" href="/programs/turbo/" data-soon aria-label="Explore Turbo — limited to 75 examples">
+            <span class="car-box"><span class="car"><img src="assets/cut-turbo-800.webp" width="800" height="266" alt="" loading="lazy" decoding="async"></span></span>
+            <span class="cap">
+              <span class="cap-name"><span class="u">Turbo</span></span>
+              <span class="cap-fig"><b>75</b><span>examples</span></span>
+              <span class="cap-desc">Turbocharged 993.</span>
+            </span>
+          </a>
+        </li>
+        <li class="slot" style="--k:1.8065;--fx:.2229;--cy:.2300">
+          <a class="prog" href="/programs/gwr/" data-soon aria-label="Explore GWR — limited to 40 examples">
+            <span class="car-box"><span class="car"><img src="assets/cut-gwr-800.webp" width="800" height="274" alt="" loading="lazy" decoding="async"></span></span>
+            <span class="cap">
+              <span class="cap-name"><span class="u">GWR</span></span>
+              <span class="cap-fig"><b>40</b><span>examples</span></span>
+              <span class="cap-desc">The definitive 993.</span>
+            </span>
+          </a>
+        </li>
+        <li class="slot" style="--k:1.8325;--fx:.2229;--cy:.2300">
+          <a class="prog" href="/programs/gwx/" data-soon aria-label="Explore GWX — by invitation">
+            <span class="car-box"><span class="car"><img src="assets/cut-gwx-800.webp" width="800" height="273" alt="" loading="lazy" decoding="async"></span></span>
+            <span class="cap">
+              <span class="cap-name"><span class="u">GWX</span></span>
+              <span class="cap-fig cap-inv"><span class="inv">By invitation</span></span>
+              <span class="cap-desc">The pinnacle of innovation.</span>
+            </span>
+          </a>
+        </li>
+      </ol>
+      <div class="tier" aria-label="Special editions and legacy programs" role="group">
+        <div class="tier-group">
+          <h3 class="eyebrow">Special editions</h3>
+          <ul class="tier-list">
+            <li><a href="/programs/special-editions/" data-soon><span class="tier-num"><b>15</b><span>examples</span></span><span class="tier-name"><span class="u">GXR-EVO</span></span></a></li>
+            <li><a href="/programs/special-editions/" data-soon><span class="tier-num"><b>5</b><span>examples</span></span><span class="tier-name"><span class="u">Brundle Edition</span></span></a></li>
+            <li><a href="/programs/special-editions/" data-soon><span class="tier-num"><b>5</b><span>examples</span></span><span class="tier-name"><span class="u">Thermal Edition</span></span></a></li>
+            <li><a href="/programs/special-editions/" data-soon><span class="tier-num"><b>1</b><span>of 1</span></span><span class="tier-name"><span class="u">Project End Game</span></span></a></li>
+          </ul>
+        </div>
+        <div class="tier-group">
+          <h3 class="eyebrow">Legacy, completed</h3>
+          <ul class="tier-list">
+            <li><a href="/programs/legacy/" data-soon><span class="tier-num"><b>25</b><span>examples</span></span><span class="tier-name"><span class="u">Coupe</span></span></a></li>
+            <li><a href="/programs/legacy/" data-soon><span class="tier-num"><b>25</b><span>examples</span></span><span class="tier-name"><span class="u">Speedster</span></span></a></li>
+          </ul>
+        </div>
+        <p class="method">Drawn to one wheelbase from Gunther Werks studio photographs.</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<!-- 3 · The atelier -->
+<section class="atelier" id="atelier" aria-labelledby="atelier-h">
+  <div class="grid12 atelier-in">
+    <div class="atelier-text">
+      <p class="eyebrow">The atelier</p>
+      <h2 id="atelier-h">Reengineered and remastered.</h2>
+      <p>Gunther Werks is not a manufacturer — it is an atelier.</p>
+      <p>Carbon fiber is made in-house, from raw material to finished panel; CNC machining is performed entirely under one roof.</p>
+      <dl class="figs">
+        <div class="fig"><dt><b>90%+</b></dt><dd>of components designed and produced internally, from structural carbon fiber to billet aluminum details.</dd></div>
+        <div class="fig"><dt><b>4.0 L</b></dt><dd>flat-six engines, co-developed with Rothsport Racing.</dd></div>
+      </dl>
+      <p class="small">The name pays tribute to Gunther Wendt, the NASA engineer known for his exacting standards during the Apollo program.</p>
+    </div>
+    <figure class="atelier-photo">
+      <picture>
+        <source type="image/avif" srcset="assets/atelier-gwr-1000.avif 1000w, assets/atelier-gwr-1600.avif 1600w, assets/atelier-gwr-2400.avif 2400w" sizes="(min-width: 1024px) 62vw, 100vw">
+        <img src="assets/atelier-gwr-1600.webp" srcset="assets/atelier-gwr-1000.webp 1000w, assets/atelier-gwr-1600.webp 1600w, assets/atelier-gwr-2400.webp 2400w" sizes="(min-width: 1024px) 62vw, 100vw" width="1600" height="1067" alt="A turquoise Gunther Werks GWR in the Huntington Beach headquarters; the workshop, with lifts and a car on stands, is visible through the glass wall behind it." loading="lazy" decoding="async">
+      </picture>
+    </figure>
+  </div>
+</section>
+
+<!-- 4 · Silence, then the peak: the F-26 at Goodwood, scrubbed by the visitor's scroll -->
+<section class="peak" id="goodwood" aria-labelledby="peak-h">
+  <div class="peak-stage">
+    <p class="peak-date"><span>Goodwood Festival of Speed</span><span class="sep" aria-hidden="true"> · </span><span>July 2026</span></p>
+    <figure class="peak-film">
+      <picture class="peak-still">
+        <source media="(max-width: 1023.98px)" type="image/avif" srcset="assets/goodwood-725-m-1200.avif">
+        <source media="(max-width: 1023.98px)" type="image/webp" srcset="assets/goodwood-725-m-1200.webp">
+        <source type="image/avif" srcset="assets/goodwood-725-1440.avif 1440w, assets/goodwood-725-2560.avif 2560w" sizes="100vw">
+        <img src="assets/goodwood-725-1440.webp" srcset="assets/goodwood-725-1440.webp 1440w, assets/goodwood-725-2560.webp 2560w" sizes="100vw" width="1440" height="810" alt="The silver Gunther Werks F-26 in side profile at speed on the Goodwood hill, number 26 on the door, rear wing up." loading="lazy" decoding="async">
+      </picture>
+      <canvas class="peak-canvas" aria-hidden="true"></canvas>
+    </figure>
+    <div class="peak-scrim" aria-hidden="true"></div>
+    <div class="peak-cap wrap">
+      <h2 id="peak-h">F-26</h2>
+      <p>1,000 horsepower from a twin-turbocharged 4.0-liter flat-six co-developed by Rothsport Racing, through a six-speed manual.</p>
+      <p class="src">Gunther Werks F-26 release, 15 Aug 2025</p>
+      <a class="link" href="/programs/f-26/" data-soon><span class="u">Explore the F-26</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- 5 · Provenance Succession -->
+<section class="psp" id="provenance" aria-labelledby="psp-h">
+  <div class="grid12 psp-in">
+    <div class="psp-text">
+      <p class="eyebrow">Provenance Succession</p>
+      <h2 id="psp-h">Curated builds, factory <span class="nw">re-validated</span> for their next steward.</h2>
+      <p>Each Provenance Succession vehicle returns to the Huntington Beach facility for a comprehensive diagnostic re-validation prior to delivery to the new owner.</p>
+      <p>Availability and succession timing are provided by Javier Roque at Prestige Imports upon qualification.</p>
+      <a class="pill pill-dark" href="#enquire" data-interest="Provenance Succession">Ask about Provenance Succession</a>
+    </div>
+    <ul class="psp-cars" aria-label="Provenance Succession builds">
+      <li class="psp-car" style="--k:1.776;--fx:.2125;--cy:.2344">
+        <span class="car-box"><span class="car"><img src="assets/psp-rubystone-1200.webp" width="1200" height="411" alt="Rubystone, a Gunther Werks Coupe in Porsche Rubystone Red, in profile." loading="lazy" decoding="async"></span></span>
+        <p class="psp-label"><b>Rubystone</b> — Coupe · Porsche Rubystone Red</p>
+      </li>
+      <li class="psp-car" style="--k:1.758;--fx:.2125;--cy:.2266">
+        <span class="car-box"><span class="car"><img src="assets/psp-phoenix-1200.webp" width="1200" height="411" alt="Phoenix, a yellow Gunther Werks Speedster, in profile." loading="lazy" decoding="async"></span></span>
+        <p class="psp-label"><b>Phoenix</b> — Speedster</p>
+      </li>
+      <li class="psp-car" style="--k:1.783;--fx:.2203;--cy:.2344">
+        <span class="car-box"><span class="car"><img src="assets/psp-bluephoenix-1200.webp" width="1200" height="411" alt="Blue Phoenix, a Gunther Werks Speedster in a bespoke blue livery, in profile." loading="lazy" decoding="async"></span></span>
+        <p class="psp-label"><b>Blue Phoenix</b> — Speedster · bespoke blue livery</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- 6 · News & Events -->
+<section class="news" id="news" aria-labelledby="news-h">
+  <div class="grid12 news-in">
+    <div class="news-lead">
+      <p class="eyebrow" id="news-h">News &amp; Events</p>
+      <figure>
+        <picture>
+          <source type="image/avif" srcset="assets/news-brundle-1000.avif 1000w, assets/news-brundle-1600.avif 1600w" sizes="(min-width: 1024px) 36vw, 100vw">
+          <img src="assets/news-brundle-1000.webp" srcset="assets/news-brundle-1000.webp 1000w, assets/news-brundle-1600.webp 1600w" sizes="(min-width: 1024px) 36vw, 100vw" width="1000" height="667" alt="The Gunther Werks Brundle Edition in blue and white, front three-quarter, in a dark studio cove." loading="lazy" decoding="async">
+        </picture>
+      </figure>
+    </div>
+    <div class="news-list-wrap">
+      <ol class="news-list">
+        <li><a href="/news/brundle-edition/" data-soon>
+          <span class="n-meta"><time datetime="2026-10-21">21 Oct 2026</time><span>Press release</span></span>
+          <span class="n-title"><span class="u">Gunther Werks Unveils Collaboration with Racing Legend Martin Brundle</span></span></a></li>
+        <li><a href="/news/gxr-evo/" data-soon>
+          <span class="n-meta"><time datetime="2026-08-14">14 Aug 2026</time><span>Press release</span></span>
+          <span class="n-title"><span class="u">Gunther Werks Reveals the GXR-Evo — The Ultimate Analog Driving Experience</span></span></a></li>
+        <li><a href="https://www.roadandtrack.com/news/a73416818/gunther-werks-gxr-evo/" target="_blank" rel="noopener">
+          <span class="n-meta"><time datetime="2026-08-14">14 Aug 2026</time><span>Road &amp; Track <svg class="out" aria-hidden="true"><use href="#out"/></svg><span class="vh">(opens in a new tab)</span></span></span>
+          <span class="n-title"><span class="u">Gunther Werks GXR-EVO Debuts as the Company’s Most Extreme Porsche 911 Restomod</span></span></a></li>
+        <li><a href="https://robbreport.com/motors/cars/lists/2026-best-automotive-1238198276/restomod-gunther-werks-f-26/" target="_blank" rel="noopener">
+          <span class="n-meta"><time datetime="2026-07-29">29 Jul 2026</time><span>Robb Report <svg class="out" aria-hidden="true"><use href="#out"/></svg><span class="vh">(opens in a new tab)</span></span></span>
+          <span class="n-title"><span class="u">Gunther Werks F-26 Named Restomod of the Year by Robb Report</span></span></a></li>
+        <li><a href="https://www.topgear.com/car-reviews/gunther-werks/f-26/first-drive" target="_blank" rel="noopener">
+          <span class="n-meta"><time datetime="2026-07-20">20 Jul 2026</time><span>Top Gear <svg class="out" aria-hidden="true"><use href="#out"/></svg><span class="vh">(opens in a new tab)</span></span></span>
+          <span class="n-title"><span class="u">Gunther Werks F-26 First Drive by Top Gear</span></span></a></li>
+        <li><a href="/events/monterey-car-week-2026/" data-soon>
+          <span class="n-meta"><time datetime="2026-08-13">13–15 Aug 2026</time><span>Event</span></span>
+          <span class="n-title"><span class="u">Monterey Car Week at GW Haus, Carmel Valley</span></span></a></li>
+      </ol>
+      <a class="link news-all" href="/news/" data-soon><span class="u">All news</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- 7 · Miami: the page closes in the cove it opened in -->
+<section class="miami" id="miami" aria-labelledby="miami-h">
+  <picture class="miami-photo">
+    <source media="(max-aspect-ratio: 1/1)" type="image/avif" srcset="assets/miami-turbo-m-720.avif 720w, assets/miami-turbo-m-1080.avif 1080w" sizes="100vw">
+    <source media="(max-aspect-ratio: 1/1)" type="image/webp" srcset="assets/miami-turbo-m-720.webp 720w, assets/miami-turbo-m-1080.webp 1080w" sizes="100vw">
+    <source type="image/avif" srcset="assets/miami-turbo-1280.avif 1280w, assets/miami-turbo-1920.avif 1920w, assets/miami-turbo-2880.avif 2880w" sizes="max(100vw, 177.78vh)">
+    <img src="assets/miami-turbo-1920.webp" srcset="assets/miami-turbo-1280.webp 1280w, assets/miami-turbo-1920.webp 1920w, assets/miami-turbo-2880.webp 2880w" sizes="max(100vw, 177.78vh)" width="1920" height="1080" alt="An orange Gunther Werks Turbo, side and rear three-quarter, in an amber studio cove." loading="lazy" decoding="async">
+  </picture>
+  <div class="miami-in">
+    <div class="miami-text">
+      <p class="eyebrow">Gunther Werks Miami</p>
+      <h2 id="miami-h">Ready to begin your Gunther Werks journey?</h2>
+    </div>
+    <div class="miami-floor">
+      <address class="contact">
+        <span class="contact-lead">Prestige Imports is the Gunther Werks dealer for Miami.</span>
+        <span class="contact-name">Javier Roque</span>
+        <span class="contact-line"><a href="tel:+13057836493">(305) 783-6493</a><a href="mailto:Javier@PrestigeImports.com">Javier@PrestigeImports.com</a></span>
+        <span>15050 Biscayne Blvd, <span class="nw">North Miami Beach, FL 33181</span></span>
+      </address>
+      <a class="pill miami-cta" href="#enquire">Enquire</a>
+    </div>
+  </div>
+</section>
+
+<section class="enquire" id="enquire" aria-labelledby="enquire-h">
+  <div class="wrap enquire-in">
+    <div class="enquire-intro">
+      <h2 id="enquire-h">Write to Javier Roque.</h2>
+      <p>Your enquiry goes to Javier Roque at Prestige Imports, 15050 Biscayne Blvd. Prefer to talk? <a href="tel:+13057836493">(305) 783-6493</a>.</p>
+    </div>
+
+    <form class="form" id="form" novalidate>
+      <div class="form-grid">
+        <div class="field">
+          <label for="f-name">Name</label>
+          <input id="f-name" name="name" type="text" autocomplete="name" required aria-describedby="e-name">
+          <p class="err" id="e-name" hidden>Please enter your name.</p>
+        </div>
+        <div class="field">
+          <label for="f-email">Email</label>
+          <input id="f-email" name="email" type="email" autocomplete="email" required aria-describedby="e-email">
+          <p class="err" id="e-email" hidden>Please enter a valid email address.</p>
+        </div>
+        <div class="field">
+          <label for="f-phone">Phone <span class="opt">(optional)</span></label>
+          <input id="f-phone" name="phone" type="tel" autocomplete="tel">
+        </div>
+        <div class="field">
+          <label for="f-interest">Interest</label>
+          <div class="select">
+            <select id="f-interest" name="interest">
+              <option>F-26</option>
+              <option>Turbo</option>
+              <option>GWR</option>
+              <option>GWX</option>
+              <option>Special editions</option>
+              <option>Provenance Succession</option>
+              <option selected>Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="field field-wide">
+          <label for="f-msg">Message</label>
+          <textarea id="f-msg" name="message" rows="5" required aria-describedby="e-msg"></textarea>
+          <p class="err" id="e-msg" hidden>Please add a short message.</p>
+        </div>
+      </div>
+      <div class="form-foot">
+        <button class="pill pill-solid" type="submit"><span class="btn-label">Send to Javier Roque</span></button>
+        <p class="form-status" role="status" aria-live="polite"></p>
+      </div>
+    </form>
+
+    <div class="sent" id="sent" tabindex="-1" hidden>
+      <p class="eyebrow">Enquiry sent</p>
+      <p class="sent-h">Thank you. Javier will be in touch.</p>
+      <p class="sent-sum" id="sent-sum"></p>
+      <button class="link" type="button" id="sent-again"><span class="u">Send another enquiry</span></button>
+      <!-- dev note: mockup only — no backend; the form simulates sending, sent and error (add ?form=error to the URL). -->
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- 8 · Footer -->
+<footer class="foot">
+  <div class="wrap foot-in">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <img class="foot-mark" src="assets/gunther-werks-logo-white.svg" width="792" height="86" alt="Gunther Werks" loading="lazy">
+        <p>Miami · Prestige Imports</p>
+      </div>
+      <div class="foot-call">
+        <p class="eyebrow">Javier Roque, Prestige Imports</p>
+        <a class="foot-tel" href="tel:+13057836493">(305) 783-6493</a>
+        <a class="foot-mail" href="mailto:Javier@PrestigeImports.com">Javier@PrestigeImports.com</a>
+        <a class="pill" href="#enquire">Enquire</a>
+      </div>
+    </div>
+    <div class="foot-cols">
+      <nav class="foot-col" aria-label="Footer">
+        <h2 class="eyebrow">Navigate</h2>
+        <ul>
+          <li><a href="#programs" data-nav="programs">Programs</a></li>
+          <li><a href="#provenance">Provenance Succession</a></li>
+          <li><a href="#news">News &amp; Events</a></li>
+          <li><a href="#miami">Miami</a></li>
+          <li><a href="#enquire">Enquire</a></li>
+        </ul>
+      </nav>
+      <div class="foot-col">
+        <h2 class="eyebrow">Programs</h2>
+        <ul>
+          <li><a href="/programs/f-26/" data-soon>F-26</a></li>
+          <li><a href="/programs/turbo/" data-soon>Turbo</a></li>
+          <li><a href="/programs/gwr/" data-soon>GWR</a></li>
+          <li><a href="/programs/gwx/" data-soon>GWX</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h2 class="eyebrow">Dealer</h2>
+        <address>
+          Prestige Imports<br>
+          15050 Biscayne Blvd<br>
+          North Miami Beach, FL 33181<br>
+          Javier Roque
+        </address>
+      </div>
+      <div class="foot-col">
+        <h2 class="eyebrow">Gunther Werks</h2>
+        <ul>
+          <li><a href="https://instagram.com/guntherwerks" target="_blank" rel="noopener">Instagram <span class="handle">@guntherwerks</span><span class="vh"> (opens in a new tab)</span></a></li>
+          <li><a href="https://youtube.com/@guntherwerks" target="_blank" rel="noopener">YouTube <span class="handle">@guntherwerks</span><span class="vh"> (opens in a new tab)</span></a></li>
+          <li><a href="https://www.facebook.com/guntherwerksna" target="_blank" rel="noopener">Facebook <span class="handle">guntherwerksna</span><span class="vh"> (opens in a new tab)</span></a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="legal">Gunther Werks Miami is operated by Prestige Imports. Not affiliated with, associated with, or endorsed by Porsche. Porsche and all Porsche model names are registered trademarks of Dr. Ing. h.c. F. Porsche AG.</p>
+  </div>
+</footer>
+
+<div class="soon-tip" id="soon-tip" role="status" aria-live="polite"></div>
+
+<script src="vendor/gsap.min.js?v=1" defer></script>
+<script src="vendor/ScrollTrigger.min.js?v=1" defer></script>
+<script src="home.js?v=3" defer></script>
+</body>
+</html>

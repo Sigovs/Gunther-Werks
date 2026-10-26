@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Concept G · Contracts v2</title>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wdth,wght@75..100,400..700&display=swap" rel="stylesheet">
+<style>
+  :root { --bg: #141414; --panel: #1c1c1c; --fg: #f2f2f0; --dim: #a3a3a3; --hair: rgba(255,255,255,.12); --flag: #ffd27a; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 15px/1.55 "Instrument Sans", Arial, sans-serif; font-variation-settings: "wdth" 90; }
+  .wrap { max-width: 1680px; margin: 0 auto; padding: 0 max(16px, 4vw); }
+  header.top { padding: 56px 0 28px; border-bottom: 1px solid var(--hair); }
+  h1 { font-weight: 400; font-size: 40px; letter-spacing: -.02em; margin: 0 0 8px; }
+  .meta { color: var(--dim); max-width: 72em; margin: 0; }
+  nav.toc { display: flex; gap: 24px; margin-top: 18px; flex-wrap: wrap; } nav.toc a { color: var(--fg); border-bottom: 1px solid var(--dim); text-decoration: none; }
+  section { padding: 52px 0 24px; border-bottom: 1px solid var(--hair); }
+  h2 { font-weight: 400; font-size: 30px; letter-spacing: -.015em; margin: 0 0 6px; }
+  h2 small { font-size: 13px; color: var(--dim); letter-spacing: .12em; text-transform: uppercase; display: block; margin-bottom: 6px; }
+  .why { color: var(--dim); max-width: 64em; margin: 0 0 26px; }
+  .grid { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 1fr); gap: 24px; align-items: start; }
+  .shots { display: grid; gap: 20px; min-width: 0; }
+  .phones { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 260px)); gap: 16px; }
+  .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .quad { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+  figure { margin: 0; min-width: 0; }
+  figure img { width: 100%; height: auto; display: block; border-radius: 6px; box-shadow: 0 0 0 1px var(--hair); background: #000; }
+  figcaption { font-size: 13px; color: var(--dim); margin-top: 8px; }
+  .spec { background: var(--panel); border-radius: 12px; padding: 20px 22px; position: sticky; top: 16px; font-size: 14px; }
+  .spec h3 { font-size: 13px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--dim); margin: 18px 0 6px; } .spec h3:first-child { margin-top: 0; }
+  .spec ul { margin: 0; padding-left: 18px; } .spec li { margin: 4px 0; }
+  .flag, .flag li { color: var(--flag); }
+  table { border-collapse: collapse; font-size: 13px; width: 100%; } td, th { border-top: 1px solid var(--hair); padding: 6px 6px 6px 0; text-align: left; vertical-align: top; }
+  .foot { padding: 36px 0 80px; color: var(--dim); }
+  @media (max-width: 1100px) { .grid { grid-template-columns: 1fr; } .spec { position: static; } .pair { grid-template-columns: 1fr; } .quad { grid-template-columns: 1fr 1fr; } }
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <h1>Concept G · section contracts, revision 2</h1>
+  <p class="meta">These are the revised contracts for Programs, Goodwood and Contact, desktop (1440 and 1920) and phone (390).</p>
+  <ul class="meta">
+    <li>Concept F is unchanged, byte for byte.</li>
+    <li>The Concept G site files are still an exact copy of F. Nothing has been integrated.</li>
+    <li>The mockups are static, built on F's tokens with Gunther Werks' own photographs and cutouts.</li>
+    <li>No paid generation was used, and none is needed: fal.ai spend for this project is $0 of the $8 ceiling. The account's recent requests are for an unrelated barbershop project.</li>
+    <li>Revision 1 is kept at <code>index-v1.html</code>.</li>
+  </ul>
+  <nav class="toc"><a href="#programs">1 · Programs</a><a href="#lineup">Lineup check</a><a href="#goodwood">2 · Goodwood</a><a href="#contact">3 · Contact</a></nav>
+</div></header>
+
+<section id="programs"><div class="wrap">
+  <h2><small>1 · Programs, revised</small>“Four programs. One 993.”</h2>
+  <p class="why">The order is unchanged: choose, see, understand, enquire.</p>
+  <ul class="why">
+    <li>The chapter is dark. The car stands on a light, neutral studio plate, with one ground recipe and one contact shadow for every car.</li>
+    <li>Selecting a program replaces the car directly. There is no ghost, outline or second car, and no hover-only state.</li>
+    <li>The supporting sentence is gone.</li>
+  </ul>
+  <div class="grid">
+    <div class="shots">
+      <figure><img src="renders-v2/1-programs_1440_f26.png" alt=""><figcaption>1440 · F-26 active. The special editions follow as their own group, on the same studio ground.</figcaption></figure>
+      <div class="pair">
+        <figure><img src="renders-v2/1-programs_1440_turbo.png" alt=""><figcaption>1440 · Turbo selected: the car, three facts and button all change together.</figcaption></figure>
+        <figure><img src="renders-v2/1-programs_1440_gwr.png" alt=""><figcaption>1440 · GWR selected, keyboard focus on its tab.</figcaption></figure>
+      </div>
+      <figure><img src="renders-v2/1-programs_1920_f26.png" alt=""><figcaption>1920.</figcaption></figure>
+      <div class="phones">
+        <figure><img src="renders-v2/1-programs_390_f26.png" alt=""><figcaption>390 · plate, then a 4-way segmented control in thumb reach, facts as rows, full-width button.</figcaption></figure>
+        <figure><img src="renders-v2/1-programs_390_gwr.png" alt=""><figcaption>390 · GWR selected.</figcaption></figure>
+      </div>
+    </div>
+    <aside class="spec">
+      <h3>Interaction</h3>
+      <ul><li>Mouse: click a name.</li><li>Keyboard: ←/→ between tabs, Home/End.</li><li>Touch: tap a segment, or swipe the plate.</li><li>The new car replaces the old in place: the old is removed and the new fades up from the studio ground in 180 ms, so two cars are never on screen. Reduced motion: an instant swap.</li><li>Scroll never changes the program.</li></ul>
+      <h3>Studio plate</h3>
+      <ul><li>A light neutral cove (#f5f4f1 → #e0ded9), 20 px radius.</li><li>The car is registered on its measured tyre contact points, so the wheelbase, scale and floor line are identical for all eight.</li><li>One contact shadow is drawn on the shared floor line: a tight shadow under each tyre plus a soft body shadow. No glow, rim light or outline.</li></ul>
+      <h3>Cutout clean-up (alpha only)</h3>
+      <ul><li>GW's cutouts carry floor shadows baked in for their dark site. On a light floor they double up with the contact shadow.</li><li>For every car, the baked shadow below the tyre contact line is removed.</li><li>Brundle also had a hard black bar along the floor, an opaque strip the tyres sit in. Only near-black pixels in that strip, outside the measured tyre discs, were removed.</li><li>The car itself is untouched: colour, angle, crop and paint.</li></ul>
+      <h3>Facts (the same three per program)</h3>
+      <ul><li>F-26: 1,000 hp, 4.0 L twin-turbo, slantnose after the 930 Flachbau.</li><li>Turbo: 850 hp in track mode, 4.0 L twin-turbo, hydraulic nose lift.</li><li>GWR: 500+ hp at 9,000 rpm, 4.0 L naturally aspirated, S-duct hood and ventilated ducktail.</li><li>GWX: 440 hp, second-generation 4.0 L, Candy Purple exclusive.</li><li>Sources are GW programme pages and releases. F-26 power follows the 15 Aug 2025 release; GW's site also says 1,067 hp.</li></ul>
+      <h3 class="flag">Known limits</h3>
+      <ul class="flag"><li>GW publishes the Turbo and Thermal profiles only at about 1,300 px. Both are softer than the others at 1440 and on retina.</li><li>The F-26 and GWX wing tips touch the top edge of GW's own files. Not visible at these sizes.</li><li>The GXR-EVO keeps GW's own baked shadow, which is darker than the others. Its body is black carbon, so a colour-based clean-up would risk eating the car.</li></ul>
+    </aside>
+  </div>
+</div></section>
+
+<section id="lineup"><div class="wrap">
+  <h2><small>Lineup check</small>Every car at its actual display size, shown at 2×</h2>
+  <p class="why">The four programs at their 1440 stage size (plate 1296×414 CSS px); the four special editions at their 1440 tile size (309×140). Wheels, tyres and lower body are visible on the ground in every frame.</p>
+  <div class="quad">
+    <figure><img src="renders-v2/lineup-f26@2x.png" alt=""><figcaption>F-26</figcaption></figure>
+    <figure><img src="renders-v2/lineup-turbo@2x.png" alt=""><figcaption>Turbo (1,314 px source)</figcaption></figure>
+    <figure><img src="renders-v2/lineup-gwr@2x.png" alt=""><figcaption>GWR</figcaption></figure>
+    <figure><img src="renders-v2/lineup-gwx@2x.png" alt=""><figcaption>GWX</figcaption></figure>
+    <figure><img src="renders-v2/lineup-gxr@2x.png" alt=""><figcaption>GXR-EVO</figcaption></figure>
+    <figure><img src="renders-v2/lineup-brundle@2x.png" alt=""><figcaption>Brundle Edition (black floor bar removed)</figcaption></figure>
+    <figure><img src="renders-v2/lineup-thermal@2x.png" alt=""><figcaption>Thermal Edition (1,344 px source)</figcaption></figure>
+    <figure><img src="renders-v2/lineup-endgame@2x.png" alt=""><figcaption>Project End Game</figcaption></figure>
+  </div>
+</div></section>
+
+<section id="goodwood"><div class="wrap">
+  <h2><small>2 · Goodwood, revised</small>“On the hill at Goodwood.”</h2>
+  <p class="why">This is a normal editorial chapter: no video, no pin, no scrub. The photograph is an inset plate on the same dark ground as the Atelier chapter before it, the same language as Atelier's own image plates, so nothing is dropped in. The supporting line and the descriptive caption are removed.</p>
+  <div class="grid">
+    <div class="shots">
+      <figure><img src="renders-v2/2-goodwood_1440_context.png" alt=""><figcaption>1440 in context: the end of Atelier (from F, unchanged), the new chapter, then the start of Provenance (from F, unchanged).</figcaption></figure>
+      <figure><img src="renders-v2/2-goodwood_1920.png" alt=""><figcaption>1920.</figcaption></figure>
+      <div class="phones"><figure><img src="renders-v2/2-goodwood_390.png" alt=""><figcaption>390 · a portrait frame from the same GW gallery.</figcaption></figure></div>
+    </div>
+    <aside class="spec">
+      <h3>Image provenance</h3>
+      <ul><li><b>Desktop:</b> <code>DS401822.jpg</code>. The F-26, number 26, in the start box under the START gantry, with the TAG Heuer clock, a marshal and a TV camera. Published by Gunther Werks in the gallery of its post “Goodwood FOS 2026 — Behind the Scenes”. The CDN folder is <code>events/fos/day3</code>, which is Saturday 11 July.</li><li><b>Phone:</b> <code>DSC07988.jpg</code>, the silver F-26 at the start line. Same gallery.</li></ul>
+      <h3 class="flag">The flame photo is withdrawn</h3>
+      <ul class="flag"><li><code>DSC00763</code> (F-26 with exhaust flames) is also in GW's Goodwood gallery, but GW publishes two versions of it (<code>DSC00763</code> and <code>DSC00763-2</code>), and the flame cannot be confirmed from our material.</li><li>GW's video poster for that post is an ordinary video frame without flames.</li><li>Not used.</li></ul>
+      <h3>Chronology (GW's two posts only)</h3>
+      <ul><li>Thu 9 Jul: Turbo, Kaleb Ngatoa and Max Orido.</li><li>Fri 10 Jul: F-26, Liam Lawson.</li><li>Sat 11 Jul: F-26, Scott Speed, Shoot-Out qualifying.</li><li>Sun 12 Jul: F-26, Scott Speed, Timed Shoot-Out.</li><li>No results, times or performance figures: GW publishes none.</li></ul>
+      <h3>Motion</h3>
+      <ul><li>None required.</li><li>If the page's shared plate reveal is used, the photo uses the same one as Atelier's plates. Reduced motion: static.</li></ul>
+    </aside>
+  </div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+  <h2><small>3 · Contact, simplified</small>“Start in Miami.”</h2>
+  <p class="why">One purpose and one action. The section is a heading, one line and “Make an enquiry”. Clicking opens a compact form in place, where the interest is a choice inside the form, not three explanatory blocks. There is no photograph, address, phone, email, specialist credit or caption.</p>
+  <div class="grid">
+    <div class="shots">
+      <div class="pair">
+        <figure><img src="renders-v2/3-contact_1440.png" alt=""><figcaption>1440 · closed. It is a closing band before the footer, not a full screen.</figcaption></figure>
+        <figure><img src="renders-v2/3-contact_1440_open.png" alt=""><figcaption>1440 · open: interest chips, name, email, optional phone, program and message, consent, send.</figcaption></figure>
+      </div>
+      <figure><img src="renders-v2/3-contact_1920.png" alt=""><figcaption>1920 · closed.</figcaption></figure>
+      <div class="phones">
+        <figure><img src="renders-v2/3-contact_390.png" alt=""><figcaption>390 · closed.</figcaption></figure>
+        <figure><img src="renders-v2/3-contact_390_open.png" alt=""><figcaption>390 · open, one field per row.</figcaption></figure>
+      </div>
+    </div>
+    <aside class="spec">
+      <h3>Behaviour</h3>
+      <ul><li>“Make an enquiry” (and every “Enquire about the …” button) opens the form here, with the interest and program preselected.</li><li>“Close” returns to the button.</li><li>The form states are F's: empty, focus, field error, sending, sent, and failed with the typed text kept.</li></ul>
+      <h3>Copy</h3>
+      <ul><li>“At Prestige Imports, North Miami Beach.” Every source agrees on this.</li><li>Javier Roque is not shown.</li></ul>
+      <h3 class="flag">Miami contact conflict: unresolved, so nothing is shown</h3>
+      <table class="flag">
+        <tr><th>Source</th><th>Address</th><th>Phone</th></tr>
+        <tr><td>GW dealer page (fetched 26 Oct)</td><td>15050 Biscayne Blvd</td><td>(305) 783-6493, Javier Roque</td></tr>
+        <tr><td>prestigeimports.com (captured 25 Oct)</td><td>14780 Biscayne Blvd</td><td>(833) 290-6287</td></tr>
+        <tr><td>duPont Registry dealer news (search snippet only; page returned 429)</td><td>14800 Biscayne Blvd</td><td>–</td></tr>
+      </table>
+      <ul class="flag" style="margin-top:8px">
+        <li>prestigeimports.com refused the connection today, so it could not be re-checked.</li>
+        <li>The address and phone stay out of this section until the dealer confirms them. Hours were not invented.</li>
+        <li>The same (305) number currently sits in F's header and footer. It is removed from the header replica here, and needs the same decision site-wide.</li>
+      </ul>
+      <h3 class="flag">Form recipient</h3>
+      <ul class="flag"><li>Where the form sends is a back-end decision, still open. The only inbox GW publishes for Miami is Javier's personal one.</li></ul>
+    </aside>
+  </div>
+</div></section>
+
+<p class="foot wrap">Rendered in Chrome at 1440×900, 1920×1080 and 390×844 @2×. Overflow is 0 at every width and no request failed. Sources are in <code>prototype/concept-g/_contracts/</code>: the <code>*-v2.html</code> pages, <code>v2.css</code>, and <code>img/cut/</code> for the cleaned cutouts. Waiting for review; nothing is integrated.</p>
+</body>
+</html>

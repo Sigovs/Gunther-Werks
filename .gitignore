@@ -1,0 +1,19 @@
+# Heavy local material, kept out of git (Alex, 26 Oct 2026):
+# downloaded GW media and raw crawls stay in research/ on disk; the .md research notes are committed.
+research/**/assets/
+research/**/_raw/
+research/**/shots/
+research/**/_sheets/
+research/**/photos/
+research/**/video/
+# QA artefacts and review exports
+**/_shots/
+prototype/_archive/video/
+prototype/_archive/screens/
+prototype/concept-g/_contracts/goodwood-loop-test/
+moodboard/*.mp4
+# OS / tooling
+.DS_Store
+Thumbs.db
+node_modules/
+__pycache__/

@@ -1,0 +1,45 @@
+{
+  "version": 2,
+  "savedAt": "2026-10-25T08:59:35.443Z",
+  "brief": {
+    "task": "new",
+    "sources": [
+      "request"
+    ],
+    "requirements": [
+      "facts"
+    ],
+    "gaps": [
+      "nothing"
+    ],
+    "facts": {
+      "file": "BRIEF.md",
+      "filled": 19,
+      "total": 19,
+      "empty": []
+    }
+  },
+  "concept": {
+    "mode": "build",
+    "sources": [
+      "vault",
+      "genjutsu"
+    ],
+    "moodboard": "none",
+    "approval": {
+      "status": "revise",
+      "identity": "6cfc5e6e15411041",
+      "idea": "Every Gunther Werks is the same 993 remastered, so the page holds that silhouette still — one profile, one floor, one scale — and makes what the atelier changed the only thing you look at.",
+      "board": "C:\\Users\\Sigoff\\AppData\\Local\\Temp\\claude\\c------WORK-PRESTIGE\\8b020534-22d3-41f3-9b2f-5798df1e1523\\scratchpad\\board\\gunther-direction.html",
+      "contract": null,
+      "closed": [
+        "6cfc5e6e15411041"
+      ]
+    }
+  },
+  "reasons": {},
+  "notes": [
+    "Alex 25 Oct: a mockup, index page only for now. Prices may be wrong without harm; names and facts must be true."
+  ],
+  "rule": "Choose the lightest stack that can faithfully execute the approved concept. Tools may execute the idea. Tools may not become the idea."
+}

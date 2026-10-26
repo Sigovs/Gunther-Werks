@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gunther Werks Miami — Concept G2</title>
+<meta name="description" content="Gunther Werks Miami, the official Gunther Werks dealer in Miami — Prestige Imports, North Miami Beach.">
+<link rel="icon" href="assets/logos/gw-mark.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Instrument+Sans:wdth,wght@75..100,400..700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/hero-1920.jpg" imagesrcset="assets/hero-1920.jpg 1920w, assets/hero-2880.jpg 2880w" imagesizes="100vw" media="(min-width: 768px)">
+<link rel="stylesheet" href="vendor/lenis.css">
+<link rel="stylesheet" href="f.css?v=g2">
+<script>
+  (function () {
+    var d = document.documentElement, q = new URLSearchParams(location.search);
+    d.style.setProperty('--vh', innerHeight + 'px');
+    if (q.has('static')) d.classList.add('static');
+    d.classList.add('js');
+  })();
+</script>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <!-- GW's X key ("a symbol of every door that closed"): a solid disc with four slots cut at N, E, S, W. -->
+    <mask id="key-cut" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+      <rect width="24" height="24" fill="#fff"/>
+      <g fill="#000" stroke="#000" stroke-width="1.6" stroke-linejoin="round">
+        <path d="M12 8.6 6.6-1h10.8Z"/><path d="M12 8.6 6.6-1h10.8Z" transform="rotate(90 12 12)"/><path d="M12 8.6 6.6-1h10.8Z" transform="rotate(180 12 12)"/><path d="M12 8.6 6.6-1h10.8Z" transform="rotate(270 12 12)"/>
+      </g>
+      <circle cx="12" cy="12" r="1.7" fill="#000"/>
+    </mask>
+  </defs>
+  <symbol id="key" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="currentColor" mask="url(#key-cut)"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 16 16"><path d="M5.6 2.5 3.4 3.2c-.6.2-1 .9-.8 1.6 1.3 4.4 4.2 7.3 8.6 8.6.7.2 1.4-.2 1.6-.8l.7-2.2-2.9-1.4-1.3 1.3C7.7 9.6 6.4 8.3 5.7 6.7L7 5.4 5.6 2.5Z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></symbol>
+  <symbol id="i-pause" viewBox="0 0 16 16"><path d="M5 3.5h2v9H5zM9 3.5h2v9H9z" fill="currentColor"/></symbol>
+  <symbol id="i-play" viewBox="0 0 16 16"><path d="M5.5 3.8v8.4L12 8 5.5 3.8Z" fill="currentColor"/></symbol>
+</svg>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ============ HEADER — one glass bar, always visible; tone follows the section under it ============ -->
+<header class="hd">
+  <div class="hd__bar">
+    <a class="hd__brand" href="#top" aria-label="Gunther Werks Miami, by Prestige Imports. Home">
+      <img class="hd__logo hd__logo--w" src="assets/logos/gunther-werks-logo-white.svg" alt="" width="150" height="16">
+      <img class="hd__logo hd__logo--k" src="assets/logos/gunther-werks-logo.svg" alt="" width="150" height="16">
+      <span class="hd__city">Miami<span class="hd__pi"> · Prestige Imports</span></span>
+    </a>
+    <nav class="hd__nav" aria-label="Primary">
+      <span class="hd__pool" aria-hidden="true"></span>
+      <a href="#programs">Programs</a>
+      <a href="#atelier">Atelier</a>
+      <a href="#provenance">Provenance</a>
+      <a href="#news">News</a>
+      <a href="#miami">Miami</a>
+    </nav>
+    <div class="hd__end">
+      <a class="hd__tel" href="tel:+13057836493"><svg aria-hidden="true"><use href="#i-phone"/></svg><span>(305) 783-6493</span></a>
+      <a class="btn btn--lit btn--sm hd__enq" href="#enquire"><span>Enquire</span></a>
+      <button class="btn btn--clear btn--sm hd__menu" type="button" aria-expanded="false" aria-controls="menu"><span>Menu</span></button>
+    </div>
+  </div>
+</header>
+
+<!-- menu (≤1279): a bottom glass sheet -->
+<div class="menu" id="menu" hidden>
+  <div class="menu__dim" data-mclose></div>
+  <div class="menu__sheet glass glass--smoke" role="dialog" aria-modal="true" aria-label="Menu">
+    <span class="menu__grab" aria-hidden="true"></span>
+    <button class="menu__close" type="button" data-mclose>Close</button>
+    <nav class="menu__nav" aria-label="Menu">
+      <a href="#programs">Programs</a><a href="#atelier">Atelier</a><a href="#provenance">Provenance</a><a href="#news">News</a><a href="#miami">Miami</a>
+    </nav>
+    <div class="menu__foot">
+      <p>Prestige Imports · North Miami Beach · <a href="tel:+13057836493">(305) 783-6493</a></p>
+      <a class="btn btn--lit btn--block" href="#enquire"><span>Enquire</span></a>
+    </div>
+  </div>
+</div>
+
+<main id="main">
+
+<!-- ============ 1 · HERO — the F-26 in GW's dark cove ============ -->
+<section class="hero" id="top" aria-labelledby="h-hero">
+  <div class="hero__media" id="hero-slides" aria-roledescription="carousel" aria-label="Gunther Werks in the studio">
+    <div class="hs__s is-on" data-i="0">
+      <picture class="hero__blurwrap" aria-hidden="true"><source media="(max-width: 767px), (orientation: portrait) and (max-width: 1199px)" srcset="assets/hero-m.jpg"><img class="hero__blur" src="assets/hero-1920.jpg" alt="" width="1920" height="1080"></picture>
+      <picture><source media="(max-width: 767px), (orientation: portrait) and (max-width: 1199px)" srcset="assets/hero-m.jpg"><img class="hero__img" src="assets/hero-1920.jpg" srcset="assets/hero-1920.jpg 1920w, assets/hero-2880.jpg 2880w" sizes="100vw" alt="The Gunther Werks F-26 in side profile, in a warm, hazy studio cove." width="1920" height="1080" fetchpriority="high"></picture>
+    </div>
+    <div class="hs__s" data-i="1" aria-hidden="true">
+      <picture class="hero__blurwrap" aria-hidden="true"><source media="(max-width: 767px), (orientation: portrait) and (max-width: 1199px)" srcset="assets/hero-turbo-m.jpg"><img class="hero__blur" src="assets/hero-turbo-1920.jpg" alt="" width="1920" height="1080" loading="lazy" fetchpriority="low"></picture>
+      <picture><source media="(max-width: 767px), (orientation: portrait) and (max-width: 1199px)" srcset="assets/hero-turbo-m.jpg"><img class="hero__img" src="assets/hero-turbo-1920.jpg" srcset="assets/hero-turbo-1920.jpg 1920w, assets/hero-turbo-2880.jpg 2880w" sizes="100vw" alt="The Gunther Werks Turbo in orange, rear three-quarter, in an amber-lit studio." width="1920" height="1080" loading="lazy" fetchpriority="low"></picture>
+    </div>
+    <div class="hs__s" data-i="2" aria-hidden="true">
+      <picture class="hero__blurwrap" aria-hidden="true"><source media="(max-width: 767px), (orientation: portrait) and (max-width: 1199px)" srcset="assets/hero-thermal-m.jpg"><img class="hero__blur" src="assets/hero-thermal-1920.jpg" alt="" width="1920" height="1080" loading="lazy" fetchpriority="low"></picture>
+      <picture><source media="(max-width: 767px), (orientation: portrait) and (max-width: 1199px)" srcset="assets/hero-thermal-m.jpg"><img class="hero__img" src="assets/hero-thermal-1920.jpg" srcset="assets/hero-thermal-1920.jpg 1920w, assets/hero-thermal-2880.jpg 2880w" sizes="100vw" alt="The Thermal Edition in white with red pinstripes, rear three-quarter, in a red-haze studio." width="1920" height="1080" loading="lazy" fetchpriority="low"></picture>
+    </div>
+    <div class="hs__s" data-i="3" aria-hidden="true">
+      <picture class="hero__blurwrap" aria-hidden="true"><source media="(max-width: 767px), (orientation: portrait) and (max-width: 1199px)" srcset="assets/hero-brundle-m.jpg"><img class="hero__blur" src="assets/hero-brundle-1920.jpg" alt="" width="1920" height="1080" loading="lazy" fetchpriority="low"></picture>
+      <picture><source media="(max-width: 767px), (orientation: portrait) and (max-width: 1199px)" srcset="assets/hero-brundle-m.jpg"><img class="hero__img" src="assets/hero-brundle-1920.jpg" srcset="assets/hero-brundle-1920.jpg 1920w" sizes="100vw" alt="The Brundle Edition in its blue-and-white livery, front three-quarter, in a dark studio." width="1920" height="1080" loading="lazy" fetchpriority="low"></picture>
+    </div>
+  </div>
+  <p class="htag"><span>The official Gunther Werks dealer in Miami — Prestige Imports, North Miami Beach.</span></p>
+  <div class="hero__top wrap">
+    <h1 id="h-hero" class="sr-only">Gunther Werks Miami</h1>
+    <p class="hero__h1" aria-hidden="true"><span class="hm"><span class="hm__i">Gunther Werks</span></span><span class="hm"><span class="hm__i">Miami</span></span></p>
+    <p class="hero__para" aria-live="polite"><span class="hp__i">The F-26. The future of analog power, limited to 26 examples.</span></p>
+  </div>
+  <div class="hero__foot wrap">
+    <div class="hero__say">
+      <div class="acts">
+        <a class="btn btn--line" href="#enquire" data-intent="viewing"><span>Book a private viewing</span></a>
+        <a class="btn btn--line" href="#programs"><span>Explore the programs</span></a>
+      </div>
+    </div>
+    <div class="hero__side">
+      <div class="hs" role="group" aria-label="Slides">
+        <span class="hs__n" aria-live="polite"><b class="js-hs-i">01</b><span> / 04</span></span>
+        <div class="hs__bars">
+          <button class="hs__bar is-on" type="button" aria-label="Slide 1 of 4" aria-controls="hero-slides" aria-current="true"><i></i></button>
+          <button class="hs__bar" type="button" aria-label="Slide 2 of 4" aria-controls="hero-slides"><i></i></button>
+          <button class="hs__bar" type="button" aria-label="Slide 3 of 4" aria-controls="hero-slides"><i></i></button>
+          <button class="hs__bar" type="button" aria-label="Slide 4 of 4" aria-controls="hero-slides"><i></i></button>
+        </div>
+        <div class="hs__btns">
+          <button class="hs__b js-hs-prev" type="button" aria-label="Previous slide" aria-controls="hero-slides"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M9.5 3.5 5 8l4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></button>
+          <button class="hs__b js-hs-pp" type="button" aria-label="Pause the slides" aria-pressed="false"><svg aria-hidden="true"><use href="#i-pause"/></svg></button>
+          <button class="hs__b js-hs-next" type="button" aria-label="Next slide" aria-controls="hero-slides"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6.5 3.5 11 8l-4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 2 · PROGRAMS — four programs, one registered base; choosing a program changes the car ============ -->
+<section class="pg" id="programs" aria-labelledby="h-pg">
+  <header class="pg__head wrap">
+    <p class="kick">The programs</p>
+    <h2 id="h-pg" class="pg__h2" data-lines>Four programs. One&nbsp;993.</h2>
+  </header>
+
+  <div class="pg__rail" role="tablist" aria-label="Gunther Werks programs">
+    <button class="pg__tab is-on" type="button" role="tab" id="tab-f26" data-k="f26" aria-selected="true" aria-controls="pg-panel"><span class="pg__name">F-26</span><span class="pg__run">26 examples</span></button>
+    <button class="pg__tab" type="button" role="tab" id="tab-turbo" data-k="turbo" aria-selected="false" aria-controls="pg-panel" tabindex="-1"><span class="pg__name">Turbo</span><span class="pg__run">75 examples</span></button>
+    <button class="pg__tab" type="button" role="tab" id="tab-gwr" data-k="gwr" aria-selected="false" aria-controls="pg-panel" tabindex="-1"><span class="pg__name">GWR</span><span class="pg__run">40 examples</span></button>
+    <button class="pg__tab" type="button" role="tab" id="tab-gwx" data-k="gwx" aria-selected="false" aria-controls="pg-panel" tabindex="-1"><span class="pg__name">GWX</span><span class="pg__run">By invitation</span></button>
+  </div>
+
+  <div class="pg__panel" id="pg-panel" role="tabpanel" aria-labelledby="tab-f26">
+    <div class="pg__plate">
+      <div class="pg__stage" id="pg-stage" aria-roledescription="program image" aria-label="Swipe to change the program">
+        <i class="pg__sh pg__sh--amb" aria-hidden="true"></i><i class="pg__sh pg__sh--body" aria-hidden="true"></i><i class="pg__sh pg__sh--tyre pg__sh--f" aria-hidden="true"></i><i class="pg__sh pg__sh--tyre pg__sh--r" aria-hidden="true"></i>
+        <img style="left:-0.3004%;top:6.1607%;width:93.2785%;aspect-ratio:4219/1433;--ox:21.199%;--oy:91.486%;--rot:0.002101rad" class="pg__car is-on" data-k="f26" src="assets/pg/f26-1200.webp" srcset="assets/pg/f26-1200.webp 1200w, assets/pg/f26-2400.webp 2400w" sizes="(min-width: 1680px) 1300px, (min-width: 768px) 82vw, 100vw" alt="The Gunther Werks F-26 in side profile." width="2400" height="815" loading="lazy" decoding="async" draggable="false">
+        <img style="left:0.5547%;top:6.6626%;width:91.7687%;aspect-ratio:1314/448;--ox:20.616%;--oy:91.964%;--rot:-0.003983rad" class="pg__car" data-k="turbo" src="assets/pg/turbo-1314.webp" alt="" width="1314" height="448" loading="lazy" decoding="async" draggable="false">
+        <img style="left:-0.2854%;top:6.1194%;width:91.8944%;aspect-ratio:4249/1438;--ox:21.502%;--oy:93.255%;--rot:-0.000408rad" class="pg__car" data-k="gwr" src="assets/pg/gwr-1200.webp" srcset="assets/pg/gwr-1200.webp 1200w, assets/pg/gwr-2400.webp 2400w" sizes="(min-width: 1680px) 1300px, (min-width: 768px) 82vw, 100vw" alt="" width="2400" height="812" loading="lazy" decoding="async" draggable="false">
+        <img style="left:-1.2191%;top:6.3474%;width:95.6050%;aspect-ratio:4336/1422;--ox:21.644%;--oy:92.194%;--rot:0.001674rad" class="pg__car" data-k="gwx" src="assets/pg/gwx-1200.webp" srcset="assets/pg/gwx-1200.webp 1200w, assets/pg/gwx-2400.webp 2400w" sizes="(min-width: 1680px) 1300px, (min-width: 768px) 82vw, 100vw" alt="" width="2400" height="787" loading="lazy" decoding="async" draggable="false">
+      </div>
+    </div>
+    <div class="pg__info wrap">
+      <p class="pg__line"><span class="js-line">The future of analog power.</span></p>
+      <dl class="pg__facts js-facts">
+        <div><dt>Power</dt><dd>1,000<small>hp</small></dd></div>
+        <div><dt>Engine</dt><dd class="t">4.0 L twin-turbo</dd></div>
+        <div><dt>Signature</dt><dd class="t">Slantnose, after the 930 Flachbau</dd></div>
+      </dl>
+      <div class="pg__act">
+        <a class="btn btn--lit js-enq" href="#enquire" data-intent="commission" data-k="f26"><span>Enquire about the F-26</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- special editions: their own group, on the same studio ground; never mixed into the program selector -->
+<section class="pse wrap" id="special-editions" aria-labelledby="h-pse">
+  <h2 id="h-pse" class="pse__h" data-lines>Special editions</h2>
+  <ul class="pse__list" role="list">
+    <li class="pse__it"><div class="pse__plate"><div class="pse__stage"><i class="pg__sh pg__sh--amb" aria-hidden="true"></i><i class="pg__sh pg__sh--body" aria-hidden="true"></i><i class="pg__sh pg__sh--tyre pg__sh--f" aria-hidden="true"></i><i class="pg__sh pg__sh--tyre pg__sh--r" aria-hidden="true"></i><img style="left:1.2140%;top:5.0442%;width:96.0327%;aspect-ratio:4584/1463;--ox:19.014%;--oy:96.104%;--rot:0.008362rad" class="pg__car is-on" data-k="gxr" src="assets/pg/gxr-1200.webp" alt="The GXR-EVO in side profile." width="1200" height="383" loading="lazy" decoding="async"></div></div>
+      <p class="pse__cap"><span class="pse__name">GXR-EVO</span><span class="pse__run">15 units</span></p><a class="pse__enq" href="#enquire" data-intent="commission" data-k="gxr" aria-label="Enquire about GXR-EVO"><span>Enquire</span><i aria-hidden="true"></i></a></li>
+    <li class="pse__it"><div class="pse__plate"><div class="pse__stage"><i class="pg__sh pg__sh--amb" aria-hidden="true"></i><i class="pg__sh pg__sh--body" aria-hidden="true"></i><i class="pg__sh pg__sh--tyre pg__sh--f" aria-hidden="true"></i><i class="pg__sh pg__sh--tyre pg__sh--r" aria-hidden="true"></i><img style="left:-5.1347%;top:4.0712%;width:105.3619%;aspect-ratio:4791/1412;--ox:23.356%;--oy:96.176%;--rot:0.006691rad" class="pg__car is-on" data-k="brundle" src="assets/pg/brundle-1200.webp" alt="The Brundle Edition in side profile." width="1200" height="354" loading="lazy" decoding="async"></div></div>
+      <p class="pse__cap"><span class="pse__name">Brundle Edition</span><span class="pse__run">5 examples</span></p><a class="pse__enq" href="#enquire" data-intent="commission" data-k="brundle" aria-label="Enquire about Brundle Edition"><span>Enquire</span><i aria-hidden="true"></i></a></li>
+    <li class="pse__it"><div class="pse__plate"><div class="pse__stage"><i class="pg__sh pg__sh--amb" aria-hidden="true"></i><i class="pg__sh pg__sh--body" aria-hidden="true"></i><i class="pg__sh pg__sh--tyre pg__sh--f" aria-hidden="true"></i><i class="pg__sh pg__sh--tyre pg__sh--r" aria-hidden="true"></i><img style="left:-2.2974%;top:5.4603%;width:97.8914%;aspect-ratio:1344/431;--ox:22.240%;--oy:93.271%;--rot:-0.006925rad" class="pg__car is-on" data-k="thermal" src="assets/pg/thermal-1344.webp" alt="The Thermal Edition in side profile." width="1344" height="431" loading="lazy" decoding="async"></div></div>
+      <p class="pse__cap"><span class="pse__name">Thermal Edition</span><span class="pse__run">5 examples</span></p><a class="pse__enq" href="#enquire" data-intent="commission" data-k="thermal" aria-label="Enquire about Thermal Edition"><span>Enquire</span><i aria-hidden="true"></i></a></li>
+    <li class="pse__it"><div class="pse__plate"><div class="pse__stage"><i class="pg__sh pg__sh--amb" aria-hidden="true"></i><i class="pg__sh pg__sh--body" aria-hidden="true"></i><i class="pg__sh pg__sh--tyre pg__sh--f" aria-hidden="true"></i><i class="pg__sh pg__sh--tyre pg__sh--r" aria-hidden="true"></i><img style="left:-1.5046%;top:10.6556%;width:94.7701%;aspect-ratio:4481/1370;--ox:22.136%;--oy:93.504%;--rot:0.001206rad" class="pg__car is-on" data-k="endgame" src="assets/pg/endgame-1200.webp" alt="Project End Game in side profile." width="1200" height="367" loading="lazy" decoding="async"></div></div>
+      <p class="pse__cap"><span class="pse__name">Project End Game</span><span class="pse__run">1 of 1</span></p><a class="pse__enq" href="#enquire" data-intent="commission" data-k="gwx" aria-label="Enquire about a one-of-one GWX commission"><span>Enquire</span><i aria-hidden="true"></i></a></li>
+  </ul>
+</section>
+
+<!-- ============ INTERLUDE — GW's Project End Game film (0:11.1–0:24.4), a muted loop; no scrub ============ -->
+<section class="vi" id="interlude" aria-label="Film: Project End Game">
+  <video class="vi__v" muted playsinline loop preload="none" poster="assets/interlude-endgame-poster.jpg" aria-hidden="true">
+    <source src="assets/interlude-endgame-1280.mp4" type="video/mp4" media="(max-width: 1023px)">
+    <source src="assets/interlude-endgame-1920.mp4" type="video/mp4">
+  </video>
+  <div class="vi__txt">
+    <p class="vi__line">Designed for pleasure.</p>
+    <p class="vi__sub">Project End Game — the final Speedster, and the first one-of-one from GWX.</p>
+    <a class="btn btn--line vi__cta" href="#enquire" data-intent="commission" data-k="gwx"><span>Discuss a one-of-one commission</span></a>
+  </div>
+  <button class="vi__pp" type="button" aria-pressed="false" aria-label="Play the film" hidden><svg aria-hidden="true"><use href="#i-play"/></svg></button>
+</section>
+
+<!-- ============ 3 · ATELIER — one strong example of craft ============ -->
+<section class="at" id="atelier" aria-labelledby="h-at">
+  <div class="grain" aria-hidden="true"></div>
+  <div class="at__text">
+    <p class="kick">The atelier · Huntington Beach, California</p>
+    <h2 id="h-at" class="at__stmt" data-lines><span class="ln">Reengineered</span> <span class="ln">and remastered.</span></h2>
+    <p class="at__body">Each car begins as a Porsche 993 donor and is rebuilt in Huntington Beach, with carbon fibre and CNC machining under one roof.</p>
+    <dl class="at__stats">
+      <div><dt>Of components designed and produced in-house</dt><dd>90%<span>+</span></dd></div>
+      <div><dt>Flat-six, co-developed with Rothsport Racing</dt><dd>4.0<span>L</span></dd></div>
+    </dl>
+  </div>
+  <figure class="at__big ph" data-speed="-.05"><img src="assets/at-engine.jpg" alt="A Gunther Werks 4.0-litre air-cooled flat-six under its GW shroud, in the engine bay." width="2000" height="1334" loading="lazy"></figure>
+  <figure class="at__carbon ph" data-speed=".14"><img src="assets/at-carbon.jpg" alt="A gloved hand pressing carbon-fibre weave into a mould in the Gunther Werks workshop." width="900" height="1349" loading="lazy"></figure>
+  <figure class="at__key">
+    <div class="ph" data-speed=".06"><img src="assets/at-key.jpg" alt="The Gunther Werks billet X-pattern key in the ignition." width="1200" height="800" loading="lazy"></div>
+    <figcaption><svg class="at__keymark" aria-hidden="true"><use href="#key"/></svg><span>“The company key was designed in an ‘X’ pattern — a symbol of every door that closed.”<em>Gunther Werks, Our Story</em></span></figcaption>
+  </figure>
+</section>
+
+<!-- ============ 4 · GOODWOOD — an editorial chapter: one GW-published photograph and GW's own chronology ============ -->
+<section class="gwd" id="goodwood" aria-labelledby="h-gwd">
+  <figure class="gwd__ph">
+    <picture>
+      <source media="(max-width: 767px)" srcset="assets/goodwood-startline-m.jpg">
+      <img src="assets/goodwood-startbox-1600.jpg" srcset="assets/goodwood-startbox-1600.jpg 1600w, assets/goodwood-startbox-2560.jpg 2560w" sizes="(min-width: 1024px) 64vw, 100vw" alt="The Gunther Werks F-26, number 26, in the Goodwood start box under the start gantry, with a marshal and a TV camera operator." width="2560" height="1707" loading="lazy" decoding="async">
+    </picture>
+  </figure>
+  <div class="gwd__txt">
+    <p class="kick gwd__kick">Goodwood Festival of Speed<span>9–12 July 2026</span></p>
+    <h2 id="h-gwd" class="gwd__h2" data-lines>On the hill at Goodwood.</h2>
+    <ol class="gwd__log" aria-label="The weekend">
+      <li><time datetime="2026-07-09">Thu 9 Jul</time><div><b>Turbo</b><span>Kaleb Ngatoa and Max Orido</span></div></li>
+      <li><time datetime="2026-07-10">Fri 10 Jul</time><div><b>F-26</b><span>Liam Lawson</span></div></li>
+      <li><time datetime="2026-07-11">Sat 11 Jul</time><div><b>F-26</b><span>Scott Speed, Shoot-Out qualifying</span></div></li>
+      <li><time datetime="2026-07-12">Sun 12 Jul</time><div><b>F-26</b><span>Scott Speed, Timed Shoot-Out</span></div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ 5 · PROVENANCE SUCCESSION — one vehicle, its verified details, one enquiry ============ -->
+<section class="psp" id="provenance" aria-labelledby="h-psp" data-hd="light">
+  <div class="psp__text">
+    <p class="kick kick--dark">Provenance Succession</p>
+    <h2 id="h-psp" class="psp__h2" data-lines>Rubystone</h2>
+    <div class="psp__foot">
+      <p class="psp__spec">Coupe · Rubystone Red · 435+ bhp</p>
+      <p class="psp__note">Factory re-validated for its next steward.</p>
+      <a class="btn btn--onlight" href="#enquire" data-intent="psp" data-k="rubystone"><span>Enquire about Rubystone</span></a>
+    </div>
+  </div>
+  <figure class="psp__ph"><div class="psp__clip"><img src="assets/psp-rubystone.jpg" alt="Rubystone, a Gunther Werks Coupe in Rubystone Red, front three-quarter, in a dark studio." width="2560" height="1707" loading="lazy"></div></figure>
+</section>
+
+<!-- ============ 6 · NEWS & EVENTS — read here; sources are kept in CONTENT-SOURCES.md ============ -->
+<section class="news" id="news" aria-labelledby="h-news">
+  <div class="news__head">
+    <p class="kick">From the Gunther Werks newsroom</p>
+    <h2 id="h-news" class="news__h2" data-lines>News &amp; events</h2>
+  </div>
+  <div class="news__grid">
+    <button class="nl" type="button" data-n="brundle" aria-haspopup="dialog">
+      <span class="nl__ph"><img src="assets/nw-brundle.jpg" alt="" width="1600" height="1067" loading="lazy"></span>
+      <span class="nl__cap glass glass--smoke"><em><time datetime="2026-10-21">21 Oct 2026</time> · Press release</em><b>Gunther Werks unveils the Brundle Edition, a five-car collaboration with Martin Brundle</b><span class="go go--sm"><span>Read</span><i></i></span></span>
+    </button>
+    <ul class="news__list" role="list">
+      <li><button class="nr" type="button" data-n="gxr" aria-haspopup="dialog"><span class="nr__ph"><img src="assets/nw-gxr.jpg" alt="" width="900" height="600" loading="lazy"></span><span class="nr__t"><em><time datetime="2026-08-14">14 Aug 2026</time> · Press release</em><b>The GXR-EVO revealed at The Quail</b><span class="go go--sm"><span>Read</span><i></i></span></span></button></li>
+      <li><button class="nr" type="button" data-n="f26award" aria-haspopup="dialog"><span class="nr__ph"><img src="assets/nw-f26-award.jpg" alt="" width="900" height="600" loading="lazy"></span><span class="nr__t"><em><time datetime="2026-07-29">29 Jul 2026</time> · Award</em><b>The F-26 named Restomod of the Year by Robb Report</b><span class="go go--sm"><span>Read</span><i></i></span></span></button></li>
+      <li><button class="nr" type="button" data-n="goodwood" aria-haspopup="dialog"><span class="nr__ph"><img src="assets/nw-goodwood.jpg" alt="" width="900" height="600" loading="lazy"></span><span class="nr__t"><em><time datetime="2026-07-12">12 Jul 2026</time> · Event</em><b>Goodwood Festival of Speed 2026, behind the scenes</b><span class="go go--sm"><span>Read</span><i></i></span></span></button></li>
+    </ul>
+  </div>
+
+  <!-- the detail texts: GW's own words from each post (deck and body), nothing added -->
+  <div class="nd__src" hidden>
+    <article data-n="brundle">
+      <p class="nd__meta"><time datetime="2026-10-21">21 Oct 2026</time> · Press release</p>
+      <h3>Gunther Werks unveils the Brundle Edition, a five-car collaboration with Martin Brundle</h3>
+      <img src="assets/nw-brundle.jpg" alt="The Brundle Edition in its two-tone pearl livery." width="1600" height="1067">
+      <p>Limited to just five examples, the Brundle Edition Turbo celebrates Martin Brundle’s storied career at the pinnacle of international motorsport through bespoke design by his daughter, acclaimed automotive designer Charlie Brundle.</p>
+      <p>Built upon the Gunther Werks Turbo platform, the Brundle Edition is powered by an air-cooled 4.0-liter flat-six producing 860 horsepower and 610 lb-ft of torque.</p>
+      <p>The Gunther Werks Brundle Edition Turbo will make its public debut at the prestigious Concours at Wynn Las Vegas.</p>
+    </article>
+    <article data-n="gxr">
+      <p class="nd__meta"><time datetime="2026-08-14">14 Aug 2026</time> · Press release</p>
+      <h3>The GXR-EVO revealed at The Quail</h3>
+      <img src="assets/nw-gxr.jpg" alt="The GXR-EVO." width="900" height="600">
+      <p>Limited to 15 units globally, GXR-Evo delivers an unrivaled air-cooled driving experience, forged in motorsport and engineered for maximum attack.</p>
+      <p>Powering the GXR-Evo is a naturally aspirated 4.0-liter flat-six co-developed with the renowned air-cooled specialists at Rothsport Racing. Producing 455 horsepower, the four-cam twin-valve engine revs to nearly 9,000 rpm.</p>
+    </article>
+    <article data-n="f26award">
+      <p class="nd__meta"><time datetime="2026-07-29">29 Jul 2026</time> · Award</p>
+      <h3>The F-26 named Restomod of the Year by Robb Report</h3>
+      <img src="assets/nw-f26-award-1600.jpg" alt="The Gunther Werks F-26 on a vineyard lane." width="1600" height="1067">
+      <p>Robb Report names the Gunther Werks F-26 Restomod of the Year in its 2026 Best of Automotive awards.</p>
+      <p>Limited to 26 examples, the F-26 begins with a Porsche 993 Carrera donor before being transformed by components made almost entirely in-house.</p>
+    </article>
+    <article data-n="goodwood">
+      <p class="nd__meta"><time datetime="2026-07-12">12 Jul 2026</time> · Event</p>
+      <h3>Goodwood Festival of Speed 2026, behind the scenes</h3>
+      <img src="assets/nw-goodwood.jpg" alt="The Gunther Werks team at Goodwood." width="900" height="600">
+      <p>Gunther Werks is on the hill at Goodwood Festival of Speed 2026 with the F-26 and Turbo.</p>
+      <p>Sunday closed our weekend at Goodwood with the Timed Shoot-Out on the hill — final runs, celebration with owners and partners, and a last look at the F-26 and Turbo on the Sussex estate.</p>
+    </article>
+  </div>
+  <dialog class="nd" aria-labelledby="nd-h">
+    <div class="nd__in"><button class="nd__x" type="button" aria-label="Close">Close</button><div class="nd__body"></div></div>
+  </dialog>
+</section>
+
+<!-- ============ 7 · MIAMI — one purpose: enquire. The form sits open under the heading; its destination is not confirmed yet ============ -->
+<section class="ct" id="miami" aria-labelledby="h-ct">
+  <div class="ct__in wrap">
+    <div class="ct__head">
+      <p class="kick">Gunther Werks Miami</p>
+      <h2 id="h-ct" class="ct__h2" data-lines>Start in Miami.</h2>
+      <p class="ct__line">At Prestige Imports, North Miami Beach.</p>
+    </div>
+    <form class="ct__form" id="enquire" aria-labelledby="h-ct" novalidate>
+      <fieldset class="ct__fs">
+        <legend>I’m interested in</legend>
+        <div class="ct__chips">
+          <label class="ct__chip"><input type="radio" name="intent" value="commission" checked><span>A new Gunther Werks</span></label>
+          <label class="ct__chip"><input type="radio" name="intent" value="psp"><span>Provenance Succession</span></label>
+          <label class="ct__chip"><input type="radio" name="intent" value="viewing"><span>A private viewing</span></label>
+        </div>
+      </fieldset>
+      <div class="ct__grid">
+        <label class="fld"><span>Name</span><input name="name" type="text" autocomplete="name" required aria-describedby="e-name"><em class="err" id="e-name">Error: please enter your name.</em></label>
+        <label class="fld"><span>Email</span><input name="email" type="email" autocomplete="email" required aria-describedby="e-email"><em class="err" id="e-email">Error: please enter an email address we can reply to.</em></label>
+        <label class="fld"><span>Phone (optional)</span><input name="tel" type="tel" autocomplete="tel"></label>
+        <label class="fld"><span>Program (optional)</span><span class="sel"><select name="program"><option value="">Not sure yet</option><option value="f26">F-26</option><option value="turbo">Turbo</option><option value="gwr">GWR</option><option value="gwx">GWX</option><option value="gxr">GXR-EVO</option><option value="brundle">Brundle Edition</option><option value="thermal">Thermal Edition</option><option value="rubystone">Rubystone (Provenance Succession)</option></select></span></label>
+        <label class="fld ct__full"><span>Message (optional)</span><textarea name="msg" rows="3"></textarea></label>
+      </div>
+      <div class="ct__end">
+        <label class="chk"><input type="checkbox" name="ok" required><i aria-hidden="true"></i><span>I agree to be contacted by Prestige Imports about Gunther Werks.</span></label>
+        <button class="btn btn--lit" type="submit"><span class="btn__t">Send enquiry</span></button>
+      </div>
+      <p class="form__note" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="ft">
+  <div class="ft__top wrap">
+    <img src="assets/logos/gunther-werks-logo-white.svg" alt="Gunther Werks" width="360" height="39">
+    <p class="ft__city">Miami <span>· Prestige Imports</span></p>
+  </div>
+  <div class="ft__grid wrap">
+    <ul class="ft__big" role="list">
+      <li><a href="#programs">Programs</a></li><li><a href="#atelier">Atelier</a></li><li><a href="#provenance">Provenance</a></li><li><a href="#news">News</a></li><li><a href="#miami">Miami</a></li>
+    </ul>
+    <div class="ft__col"><p class="ft__h">Programs</p><ul role="list"><li><a href="#programs" data-k="f26">F-26</a></li><li><a href="#programs" data-k="turbo">Turbo</a></li><li><a href="#programs" data-k="gwr">GWR</a></li><li><a href="#programs" data-k="gwx">GWX</a></li><li><a href="#special-editions">Special editions</a></li></ul></div>
+    <div class="ft__col"><p class="ft__h">Ownership</p><ul role="list"><li><a href="#provenance">Provenance Succession</a></li><li>5-year, 100,000-mile warranty</li></ul></div>
+    <div class="ft__col"><p class="ft__h">Dealer</p><ul role="list"><li>Prestige Imports</li><li>North Miami Beach, FL</li><li><a href="tel:+13057836493">(305) 783-6493</a></li></ul></div>
+  </div>
+  <div class="ft__legal wrap">
+    <p>© 2026 Prestige Imports · <a href="#">Privacy</a> · <a href="#">Accessibility</a> · <a href="#">Cookie settings</a></p>
+    <p class="ft__small">Gunther Werks Miami is presented by Prestige Imports, an official Gunther Werks dealer. Gunther Werks’ services are provided solely by Gunther Werks. This site is not affiliated with, associated with, or endorsed by Porsche. Porsche and all Porsche model names are registered trademarks of Dr. Ing. h.c. F. Porsche AG.</p>
+  </div>
+</footer>
+
+<script src="vendor/gsap.min.js"></script>
+<script src="vendor/ScrollTrigger.min.js"></script>
+<script src="vendor/lenis.min.js"></script>
+<script src="f.js?v=g2"></script>
+</body>
+</html>

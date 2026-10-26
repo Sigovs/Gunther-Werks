@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>G contract · Programs</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Instrument+Sans:wdth,wght@75..100,400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="contracts.css">
+<style>@media (max-width: 767px) { .pg__head { order: 1 } .stage { order: 2 } .rail { order: 3 } .swipe { order: 4 } .info { order: 5 } }</style>
+</head>
+<body>
+<header class="hd hd--light">
+  <img class="hd__logo" src="../assets/logos/gunther-werks-logo-white.svg" alt="Gunther Werks">
+  <span class="hd__sub">MIAMI<span> · PRESTIGE IMPORTS</span></span>
+  <nav class="hd__nav"><a class="on">Programs</a><a>Atelier</a><a>Provenance</a><a>News</a><a>Miami</a></nav>
+  <span class="hd__tel">(305) 783-6493</span><a class="hd__cta">Enquire</a><a class="hd__menu">Menu</a>
+</header>
+
+<section class="pg" id="programs" aria-labelledby="pg-h">
+  <header class="pg__head wrap">
+    <p class="kick">The programs</p>
+    <h2 class="h2" id="pg-h">Four programs. One 993.</h2>
+    <p class="lede">Every Gunther Werks begins with the 993, the final air-cooled generation of the Porsche 911.</p>
+  </header>
+
+  <div class="rail" role="tablist" aria-label="Gunther Werks programs"></div>
+
+  <div class="stage" id="stage" aria-live="polite">
+    <div class="stage__floor"></div>
+    <p class="stage__peek"></p>
+  </div>
+  <p class="swipe">Swipe the car or tap a program</p>
+
+  <div class="info wrap" role="tabpanel">
+    <p class="info__line"><span class="js-line"></span><small class="js-src"></small></p>
+    <dl class="facts"></dl>
+    <div class="act"><a class="btn btn--ink js-enq" href="#miami"></a><a class="lnk js-ext"></a></div>
+  </div>
+</section>
+
+<section class="se" aria-labelledby="se-h">
+  <div class="se__head wrap">
+    <div><p class="kick">Special editions</p><h3 id="se-h">Built in fives, fifteens and ones.</h3></div>
+    <p>Limited runs built alongside the four programs, each announced by Gunther Werks with its own number.</p>
+  </div>
+  <ul class="se__list wrap"></ul>
+</section>
+
+<script>
+/* Data: Gunther Werks' own published figures (research/corp/GUNTHER_WERKS_CI.md §2.1). Same three categories for every program, so the four can be compared. */
+const P = {
+  f26:   { name: 'F-26',  run: '26 examples',  line: 'The future of analog power.', src: 'F-26 programme page · F-26 release, 15 Aug 2025',
+           facts: [['Power', '1,000', 'hp'], ['Engine', '4.0 L twin-turbo'], ['Signature', 'Slantnose, after the 930 Flachbau']] },
+  turbo: { name: 'Turbo', run: '75 examples',  line: 'Inspired by forced induction.', src: 'Turbo programme page',
+           facts: [['Power', '850', 'hp, track mode'], ['Engine', '4.0 L twin-turbo'], ['Signature', 'Hydraulic nose lift from the wheel']] },
+  gwr:   { name: 'GWR',   run: '40 examples',  line: 'The definitive 993.', src: 'GWR programme page',
+           facts: [['Power', '500+', 'hp at 9,000 rpm'], ['Engine', '4.0 L naturally aspirated'], ['Signature', 'S-duct hood, ventilated ducktail']] },
+  gwx:   { name: 'GWX',   run: 'By invitation', line: 'One-of-one and few-off editions.', src: 'GWX page · GWX release, 13 Aug 2025',
+           facts: [['Power', '440', 'hp'], ['Engine', '4.0 L, second generation'], ['Signature', 'Candy Purple, exclusive to the GWX']] }
+};
+const SE = [
+  ['gxr', 'GXR-EVO', '15', 'units', 'Naturally aspirated, nearly 9,000 rpm'],
+  ['brundle', 'Brundle Edition', '5', 'examples', 'Announced 21 Oct 2026'],
+  ['thermal', 'Thermal Edition', '5', 'examples', 'A tribute to The Thermal Club'],
+  ['endgame', 'Project End Game', '1', 'of 1', 'The final Speedster; completed']
+];
+/* registration copied from concept-f/f.js (measured tyre contact points) */
+const REG = {
+  f26: { w: 4219, h: 1433, f: [.21199, .91486], r: [.77623, .91137], s: 'f26-2400.webp' },
+  turbo: { w: 1314, h: 448, f: [.20616, .91964], r: [.77968, .92634], s: 'turbo-1314.webp' },
+  gwr: { w: 4249, h: 1438, f: [.21502, .93255], r: [.78776, .93324], s: 'gwr-2400.webp' },
+  gwx: { w: 4336, h: 1422, f: [.21644, .92194], r: [.76695, .91913], s: 'gwx-2400.webp' },
+  gxr: { w: 4584, h: 1463, f: [.19014, .96104], r: [.73818, .94668], s: 'gxr-1200.webp' },
+  brundle: { w: 4791, h: 1412, f: [.23356, .96176], r: [.73308, .95042], s: 'brundle-1200.webp' },
+  thermal: { w: 1344, h: 431, f: [.2224, .93271], r: [.76004, .94432], s: 'thermal-1344.webp' },
+  endgame: { w: 4481, h: 1370, f: [.22136, .93504], r: [.77672, .93285], s: 'endgame-1200.webp' }
+};
+function place(k, el, ST) {
+  const r = REG[k], a = r.w / r.h, fx = r.f[0], fy = r.f[1] / a, rx = r.r[0], ry = r.r[1] / a;
+  const th = Math.atan2(ry - fy, rx - fx), s = (1 / ST.W) / Math.hypot(rx - fx, ry - fy);
+  el.style.left = (ST.FX / ST.W - s * fx) * 100 + '%'; el.style.top = ((ST.FLOOR / ST.W - s * fy) / (ST.H / ST.W)) * 100 + '%';
+  el.style.width = s * 100 + '%'; el.style.aspectRatio = r.w + '/' + r.h;
+  el.style.setProperty('--ox', fx * 100 + '%'); el.style.setProperty('--oy', r.f[1] * 100 + '%'); el.style.setProperty('--rot', -th + 'rad');
+}
+const q = new URLSearchParams(location.search), cur = q.get('p') || 'f26', ghost = q.get('ghost');
+const ST = { W: 1.90, H: 0.80, FX: 0.37, FLOOR: 0.60 };
+const stage = document.getElementById('stage'), rail = document.querySelector('.rail');
+Object.keys(P).forEach(k => {
+  const im = new Image(); im.className = 'stage__car' + (k === cur ? ' is-on' : ''); im.src = '../assets/hl/' + REG[k].s; im.alt = k === cur ? 'The Gunther Werks ' + P[k].name + ' in side profile' : ''; place(k, im, ST); stage.appendChild(im);
+  const b = document.createElement('button'); b.className = 'tab' + (k === cur ? ' is-on' : '') + (k === ghost ? ' is-hover' : ''); b.setAttribute('role', 'tab'); b.setAttribute('aria-selected', k === cur);
+  b.innerHTML = `<span class="tab__name">${P[k].name}</span><span class="tab__run">${P[k].run}</span>`; rail.appendChild(b);
+});
+if (ghost) { const g = new Image(); g.className = 'stage__ghost'; g.src = '../assets/hl/' + ghost + '-line.png'; place(ghost, g, ST); stage.appendChild(g); stage.classList.add('is-ghosting'); stage.querySelector('.stage__peek').textContent = P[ghost].name + ' outline: click to bring it in'; }
+if (q.has('focus')) rail.children[Object.keys(P).indexOf(q.get('focus'))].classList.add('focus-demo');
+const p = P[cur];
+document.querySelector('.js-line').textContent = p.line;
+document.querySelector('.js-src').textContent = 'Source: Gunther Werks ' + p.src;
+document.querySelector('.facts').innerHTML = p.facts.map(([t, v, u]) => u ? `<div><dt>${t}</dt><dd>${v}<small>${u}</small></dd></div>` : `<div><dt>${t}</dt><dd class="t">${v}</dd></div>`).join('');
+document.querySelector('.js-enq').innerHTML = `Enquire about the ${p.name} <span class="arrow">→</span>`;
+document.querySelector('.js-ext').innerHTML = `The ${p.name} at guntherwerks.com <span class="arrow">↗</span>`;
+const SEST = { W: 1.90, H: 0.62, FX: 0.37, FLOOR: 0.50 };
+document.querySelector('.se__list').innerHTML = SE.map(([k, n, v, u, l]) => `<li class="se__it"><div class="se__car" data-k="${k}"></div><p class="se__name">${n}</p><p class="se__run"><b>${v}</b>${u} · ${l}</p><a class="lnk">On guntherwerks.com <span class="arrow">↗</span></a></li>`).join('');
+document.querySelectorAll('.se__car').forEach(c => { const im = new Image(); im.className = 'stage__car'; im.src = '../assets/hl/' + REG[c.dataset.k].s; im.alt = ''; place(c.dataset.k, im, SEST); c.appendChild(im); });
+</script>
+</body>
+</html>

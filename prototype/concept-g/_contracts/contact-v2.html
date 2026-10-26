@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>G contract v2 · Contact</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Instrument+Sans:wdth,wght@75..100,400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="v2.css">
+</head>
+<body>
+<header class="hd">
+  <img class="hd__logo" src="../assets/logos/gunther-werks-logo-white.svg" alt="Gunther Werks">
+  <span class="hd__sub">MIAMI<span> · PRESTIGE IMPORTS</span></span>
+  <nav class="hd__nav"><a>Programs</a><a>Atelier</a><a>Provenance</a><a>News</a><a class="on">Miami</a></nav>
+  <a class="hd__cta">Enquire</a><a class="hd__menu">Menu</a>
+</header>
+
+<!-- closed: one heading, one line, one action -->
+<section class="ct js-closed" id="miami" aria-labelledby="ct-h">
+  <p class="kick">Gunther Werks Miami</p>
+  <h2 class="h2" id="ct-h">Start in Miami.</h2>
+  <p class="ct__line">At Prestige Imports, North Miami Beach.</p>
+  <a class="btn btn--w">Make an enquiry <span class="arrow">→</span></a>
+</section>
+
+<!-- open: the compact form replaces the button in place -->
+<section class="ct ct--open js-open" aria-labelledby="ct-h2" hidden>
+  <div class="ct__top"><div><p class="kick">Gunther Werks Miami</p><h2 class="h2" id="ct-h2">Start in Miami.</h2></div><button class="close" type="button">Close</button></div>
+  <div class="form">
+    <div class="fld full">I’m interested in<div class="chips" role="radiogroup"><span class="chip on" role="radio" aria-checked="true">A new Gunther Werks</span><span class="chip" role="radio">Provenance Succession</span><span class="chip" role="radio">A private viewing</span></div></div>
+    <label class="fld">Name<i class="focus"></i></label>
+    <label class="fld">Email<i></i></label>
+    <label class="fld">Phone (optional)<i></i></label>
+    <label class="fld">Program (optional)<i>F-26</i></label>
+    <label class="fld full">Message (optional)<i class="ta"></i></label>
+    <div class="send"><label>I agree to be contacted by Prestige Imports about Gunther Werks.</label><a class="btn btn--w">Send enquiry <span class="arrow">→</span></a></div>
+  </div>
+</section>
+<script>if (new URLSearchParams(location.search).has('open')) { document.querySelector('.js-closed').hidden = true; document.querySelector('.js-open').hidden = false; }</script>
+</body>
+</html>

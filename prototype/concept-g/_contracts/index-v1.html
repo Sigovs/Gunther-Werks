@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Concept G · Visual contracts</title>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wdth,wght@75..100,400..700&display=swap" rel="stylesheet">
+<style>
+  :root { --bg: #141414; --panel: #1c1c1c; --fg: #f2f2f0; --dim: #a3a3a3; --hair: rgba(255,255,255,.12); --acc: #fff; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 15px/1.55 "Instrument Sans", Arial, sans-serif; font-variation-settings: "wdth" 90; }
+  .wrap { max-width: 1680px; margin: 0 auto; padding: 0 max(16px, 4vw); }
+  header.top { padding: 56px 0 32px; border-bottom: 1px solid var(--hair); }
+  h1 { font-weight: 400; font-size: 40px; letter-spacing: -.02em; margin: 0 0 8px; }
+  .meta { color: var(--dim); max-width: 70em; }
+  nav.toc { display: flex; gap: 24px; margin-top: 20px; flex-wrap: wrap; }
+  nav.toc a { color: var(--fg); border-bottom: 1px solid var(--dim); text-decoration: none; }
+  section { padding: 56px 0 24px; border-bottom: 1px solid var(--hair); }
+  h2 { font-weight: 400; font-size: 30px; letter-spacing: -.015em; margin: 0 0 6px; }
+  h2 small { font-size: 14px; color: var(--dim); letter-spacing: .12em; text-transform: uppercase; display: block; margin-bottom: 6px; }
+  .why { color: var(--dim); max-width: 62em; margin: 0 0 28px; }
+  .grid { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 1fr); gap: 24px; align-items: start; }
+  .shots { display: grid; gap: 20px; min-width: 0; }
+  .phones { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
+  figure { margin: 0; min-width: 0; }
+  figure img { width: 100%; height: auto; display: block; border-radius: 6px; box-shadow: 0 0 0 1px var(--hair); background: #000; }
+  figcaption { font-size: 13px; color: var(--dim); margin-top: 8px; }
+  .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .spec { background: var(--panel); border-radius: 12px; padding: 20px 22px; position: sticky; top: 16px; font-size: 14px; }
+  .spec h3 { font-size: 13px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--dim); margin: 18px 0 6px; }
+  .spec h3:first-child { margin-top: 0; }
+  .spec ul { margin: 0; padding-left: 18px; } .spec li { margin: 4px 0; }
+  .flag { color: #ffd27a; }
+  .foot { padding: 40px 0 80px; color: var(--dim); }
+  @media (max-width: 1100px) { .grid { grid-template-columns: 1fr; } .spec { position: static; } .pair { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <h1>Concept G · visual contracts</h1>
+  <p class="meta">Three replacement sections for the Concept F homepage, shown at the same fidelity: desktop (1440 and 1920), states, and phone (390). The rest of the page stays Concept F. Concept F is untouched at <code>prototype/concept-f/</code>; Concept G is a separate copy at <code>prototype/concept-g/</code> and nothing in it has been changed yet. These are static mockups built on F's tokens, with GW's own photographs and cutouts only. They are not the implementation.</p>
+  <nav class="toc"><a href="#programs">1 · Programs</a><a href="#goodwood">2 · Goodwood</a><a href="#contact">3 · Contact</a></nav>
+</div></header>
+
+<section id="programs"><div class="wrap">
+  <h2><small>1 · Replaces “House Lights”</small>Programs: “Four programs. One 993.”</h2>
+  <p class="why">One section, read top to bottom in one order: <b>choose</b> (the four programs are the navigation) → <b>see</b> (one large car on the same registered base) → <b>understand</b> (three facts, the same three for every program) → <b>act</b> (one button). Special editions move to their own dark band below, so the two groups can never be confused.</p>
+  <div class="grid">
+    <div class="shots">
+      <figure><img src="renders/1-programs_1440_f26.png" alt=""><figcaption>1440 · default: F-26 active. The section is exactly one screen; the special-editions band follows.</figcaption></figure>
+      <div class="pair">
+        <figure><img src="renders/1-programs_1440_hover-turbo.png" alt=""><figcaption>1440 · hover on “Turbo”: its outline is laid over the F-26 on the same base before you commit.</figcaption></figure>
+        <figure><img src="renders/1-programs_1440_gwr.png" alt=""><figcaption>1440 · GWR selected, keyboard focus on its tab.</figcaption></figure>
+      </div>
+      <figure><img src="renders/1-programs_1920_f26.png" alt=""><figcaption>1920 · the stage is capped, so the car keeps its air on wide screens.</figcaption></figure>
+      <div class="phones">
+        <figure><img src="renders/1-programs_390_f26.png" alt=""><figcaption>390 · car first, then a 4-way segmented control in thumb reach.</figcaption></figure>
+        <figure><img src="renders/1-programs_390_turbo.png" alt=""><figcaption>390 · Turbo selected (tap or swipe the car).</figcaption></figure>
+      </div>
+    </div>
+    <aside class="spec">
+      <h3>Which program is active</h3>
+      <ul><li>Desktop: active name in full ink with a 2 px bar over its column; the other three at 42 % ink.</li><li>Phone: active segment filled in ink.</li><li>Tabs use <code>role="tab"</code> and <code>aria-selected</code>.</li></ul>
+      <h3>How to move</h3>
+      <ul><li>Mouse: click a name.</li><li>Keyboard: ←/→ moves between tabs, Home/End jump to the ends.</li><li>Touch: tap a segment, or swipe the car.</li><li>Scroll never changes the program.</li></ul>
+      <h3>What distinguishes it</h3>
+      <ul><li>The same three facts for every program, so the four compare: <b>Power · Engine · Signature</b>.</li><li>F-26: 1,000 hp · 4.0 L twin-turbo · slantnose, after the 930 Flachbau.</li><li>Turbo: 850 hp (track mode) · 4.0 L twin-turbo · hydraulic nose lift.</li><li>GWR: 500+ hp at 9,000 rpm · 4.0 L naturally aspirated · S-duct hood, ventilated ducktail.</li><li>GWX: 440 hp · 4.0 L second generation · Candy Purple, exclusive.</li><li>One source line under the program line.</li></ul>
+      <h3>Next action</h3>
+      <ul><li>“Enquire about the F-26”: one solid button, preselects the program in Contact.</li><li>Secondary: the program at guntherwerks.com ↗.</li></ul>
+      <h3>Motion</h3>
+      <ul><li>Program change: the new car dissolves in over the old one, which drops out late (from F).</li><li>The active bar slides between columns.</li><li>No pin, no scroll-driven light-up.</li><li>Reduced motion: instant swap.</li></ul>
+      <h3>Removed from F</h3>
+      <ul><li>The pinned dark-to-light scrub.</li><li>Leader-line callouts.</li><li>The four-line spec list and the tiny switcher.</li><li>Special editions on the same stage.</li></ul>
+      <h3>Sources</h3>
+      <ul><li>GW programme pages and releases.</li><li>F-26 1,000 hp per the 15 Aug 2025 release; GW's site also says 1,067.</li><li>GWX 440 hp per the 13 Aug 2025 GWX release; the site states no figure.</li></ul>
+    </aside>
+  </div>
+</div></section>
+
+<section id="goodwood"><div class="wrap">
+  <h2><small>2 · Replaces the scroll-scrubbed film</small>Goodwood: “On the hill at Goodwood.”</h2>
+  <p class="why"><b>Footage test first, as asked.</b> The F-26 clip was played as a plain muted loop at normal speed, in two variants: <code>_contracts/goodwood-loop-test/loop-A</code> is the best 4.4 s take three times; <code>loop-B</code> is the full 21 s clip twice.</p>
+  <ul class="why">
+    <li>It is event coverage, with cuts at 2.5, 7, 9, 14.5, 17.5 and 19 s.</li>
+    <li>For most of the clip the car is small in a wide frame. There is a dark tree tunnel and a blown frame at 17 s.</li>
+    <li>The one strong take (head-on approach) is soft telephoto with heat shimmer. It cannot loop seamlessly: the car approaches, then jumps back.</li>
+  </ul>
+  <p class="why"><b>Verdict: it does not hold attention, so the chapter becomes a still composition.</b> GW's own start-line photograph carries it; the four-day log carries the information. No video, no scrub, no oversized figure.</p>
+  <div class="grid">
+    <div class="shots">
+      <figure><img src="renders/2-goodwood_1440.png" alt=""><figcaption>1440 · photograph on 8 of 12 columns, uncovered. Text and the weekend log are on the dark ground beside it.</figcaption></figure>
+      <figure><img src="renders/2-goodwood_1920.png" alt=""><figcaption>1920.</figcaption></figure>
+      <div class="phones" style="grid-template-columns: minmax(0, 260px)">
+        <figure><img src="renders/2-goodwood_390.png" alt=""><figcaption>390 · GW's own portrait frame of the F-26 at the start line, then the text and log.</figcaption></figure>
+      </div>
+    </div>
+    <aside class="spec">
+      <h3>Composition</h3>
+      <ul><li>One dominant photograph (F-26 at the START gantry, exhaust flames, marshal), with nothing laid over the car.</li><li>Beside it: dates, title, one line, the four-day log, and a link to GW's behind-the-scenes page.</li></ul>
+      <h3>Claims (all from GW's two Goodwood posts)</h3>
+      <ul><li>9–12 July 2026.</li><li>F-26 and Turbo on the 1.16-mile hillclimb.</li><li>Thu: Turbo, Kaleb Ngatoa and Max Orido. Fri: F-26, Liam Lawson. Sat: F-26, Scott Speed, Shoot-Out qualifying. Sun: F-26, Scott Speed, Timed Shoot-Out.</li><li>No times or results are claimed, because GW publishes none.</li></ul>
+      <h3>Motion</h3>
+      <ul><li>None required.</li><li>Optional: a slow 4 % scale settle on the photo as it enters (transform only), disabled under reduced motion.</li></ul>
+      <h3>Removed from F</h3>
+      <ul><li>The 115-frame canvas scrub and its pin.</li><li>Captions keyed to the film.</li><li>“1,000 HP” set at display size.</li><li>The film pause control.</li></ul>
+      <h3>Effect on the page</h3>
+      <ul><li>One fewer pin.</li><li>About 1.1 screens shorter at 1920.</li><li>5.4 MB of frames (1.6 MB on phones) no longer load.</li></ul>
+    </aside>
+  </div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+  <h2><small>3 · Replaces “Talk to Javier.”</small>Contact: “Start in Miami.”</h2>
+  <p class="why">The dealer is the subject: Gunther Werks Miami at Prestige Imports. Three enquiry paths are the next step. The form opens in place, on the page ground, only after a path is chosen. The photograph sits beside the content and is never covered. Javier Roque appears once, as secondary contact information.</p>
+  <div class="grid">
+    <div class="shots">
+      <figure><img src="renders/3-contact_1440.png" alt=""><figcaption>1440 · default: three paths, showroom and contact details.</figcaption></figure>
+      <div class="pair">
+        <figure><img src="renders/3-contact_1440_hover.png" alt=""><figcaption>1440 · hover on a path: the row steps in and its arrow fills.</figcaption></figure>
+        <figure><img src="renders/3-contact_1440_form.png" alt=""><figcaption>1440 · “Commission” chosen: the form opens under it, with the program preselected from Programs.</figcaption></figure>
+      </div>
+      <figure><img src="renders/3-contact_1920.png" alt=""><figcaption>1920.</figcaption></figure>
+      <div class="phones">
+        <figure><img src="renders/3-contact_390.png" alt=""><figcaption>390 · paths, then Call and Directions as two thumb buttons.</figcaption></figure>
+        <figure><img src="renders/3-contact_390_form.png" alt=""><figcaption>390 · path chosen, form open; one field per row.</figcaption></figure>
+      </div>
+    </div>
+    <aside class="spec">
+      <h3>Enquiry paths</h3>
+      <ul><li>Commission a Gunther Werks (F-26, Turbo, GWR, or GWX by invitation).</li><li>Provenance Succession.</li><li>Book a private viewing.</li><li>Each path preselects the form's intent. “Change” returns to the three.</li></ul>
+      <h3>Form states (as in F)</h3>
+      <ul><li>Empty, focus, field error, sending, sent, and failed with the typed text kept.</li><li>Sends to the dealership, not to a named person.</li></ul>
+      <h3>Verified details</h3>
+      <ul><li>GW's own dealer page: Prestige Imports, 15050 Biscayne Blvd, North Miami Beach, FL 33181, (305) 783-6493, Javier@PrestigeImports.com, Javier Roque.</li><li>“First East Coast showroom”: The Shop Magazine, 27 Nov 2023.</li></ul>
+      <h3 class="flag">Open points (yours to decide)</h3>
+      <ul class="flag"><li>The only phone and email GW publishes for Miami are Javier's direct line and inbox. If Prestige has a general Gunther Werks inbox, it should replace the email shown here.</li><li>prestigeimports.com shows a different address (14780 Biscayne Blvd) and line ((833) 290-6287). I keep GW's listing, as approved at kickoff.</li><li>Opening hours are left out: the only hours found are Prestige's, filed under the 14780 address.</li><li>The photograph is GW's HQ in Huntington Beach and is captioned as such. No photo of the Miami showroom exists in our material.</li></ul>
+      <h3>Removed from F</h3>
+      <ul><li>The large milk-glass pane over the photo.</li><li>“Talk to Javier.” as the headline.</li><li>The floating form card.</li><li>GW's “We don't sell cars” quote.</li></ul>
+    </aside>
+  </div>
+</div></section>
+
+<p class="foot wrap">Static mockups, rendered in Chrome at 1440×900, 1920×1080 and 390×844 @2×. Overflow is 0 at every width and no request failed. Mockup sources are in <code>prototype/concept-g/_contracts/</code>. Awaiting approval before anything is built into Concept G.</p>
+</body>
+</html>
