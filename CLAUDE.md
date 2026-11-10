@@ -67,6 +67,7 @@ Figures follow `content-provenance`: sourced and uncontradicted only, never inve
     - Unresolved contact details stay out: the Miami address and phone conflict across sources (GW 15050 / Prestige 14780 / duPont 14800).
   - **fal.ai:** ceiling $8 cumulative for this project, spent $0 as of 26 Oct. Show the assets, the reason and the estimate before any spend.
 - **Concept G is the working base (Alex, 26 Oct: "a solid good").** Next comes a round of small edits inside G, not a new concept.
+- **Alex on G2 (26 Oct, after the hero slides, the pins, the film interlude and the car-change motion): "I really liked it."** It is the approved direction. New work refines G2 and must not drop below it.
 - **Concept G2 (26 Oct, `prototype/concept-g2/`)** is the working variation of G. G and F are kept unchanged. Rules from this round, which bind the site from here on:
   - **No visitor-facing external links or source citations.** Sources and attribution live in `concept-g2/CONTENT-SOURCES.md`.
   - **News & events are read on the site.** Each item opens a dialog with GW's own wording for that post.
@@ -144,3 +145,11 @@ Figures follow `content-provenance`: sourced and uncontradicted only, never inve
 - **Craft bar = racing.porsche.com, never its components (Alex, 25 Oct 2026):** take its neatness (quiet interface, huge imagery, one thing per screen, precise alignment); do not reuse its pill nav, black rounded cards, corner-arrow squares or black pill tabs.
 - **D and E are two different UI languages (Alex, 25 Oct 2026):** E = "Glass & Key". D = "Billet & Gauge", from GW's machined billet parts, CNC work and the F-26's satin stealth gauge rings: graphite plates with an engraved hairline frame inset 6–8 px, satin brushed gradient, 4–6 px radii; markers as machined bezel rings (outer ring + inner dot, rotates a few degrees on hover, notch points like a needle); tabs as a slim scale with ticks and a sliding needle; slim rectangular buttons with a 1 px satin gradient edge, hover = one satin sweep; links = hairline with a travelling notch; graphite nav bar with engraved hairline, always visible; form fields = engraved underline that fills like a gauge sweep on focus; micro-motion 180–320 ms ease-out with a tiny settle. Every tick or ring marks something real.
 - **Identity (Alex, 25 Oct 2026):** Gunther Werks' own brand stays recognisable; the sibling sites' (Czinger, Pagani, Lamborghini) ground, palette and type are not inherited — decided again from evidence.
+- **Concept G3 (10 Nov 2026, `prototype/concept-g3/`): the client's review on a copy of G2.** G2 stays as the client saw it. Rules from this round, which replace the G2 ones where they conflict:
+  - **Contact is shown:** 15050 Biscayne Blvd, North Miami Beach, FL 33181; sales (833) 290-5691, service and parts (833) 290-5692 (the header carries sales only); sales hours Mon–Fri 9–7, Sat 10–6, Sun closed (Prestige Imports' verified sales hours; Alex had the "to be confirmed" note removed).
+  - **External links are allowed where the client asked:** Google Maps directions, guntherwerks.com, Instagram guntherwerksmiami, Facebook guntherwerksna. Sources are still never cited on the page.
+  - **US spelling** (Inquire, inquiry, fiber, liter), as on Marine. The form's address is `#inquire`.
+  - **Privacy** is Prestige Imports' own policy word for word; **Accessibility** is our draft and states only what the site does (client to approve); **Cookie settings** is a working choice, analytics off until allowed.
+  - **Each model has its own address** (#f26 #turbo #gwr #gwx). A contextual Inquire opens the glass side panel with the form; the header's Inquire goes to the Miami section.
+  - **Dated content reads its dates:** an event shows Upcoming / On now / Past event; News links to the GW newsroom. News was current against the newsroom on 10 Nov 2026.
+  - **The header bar is a lens** in Chromium (`lens.js`, an SVG displacement map); other browsers keep the frost.

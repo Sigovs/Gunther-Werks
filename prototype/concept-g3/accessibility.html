@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Accessibility — Gunther Werks Miami</title>
+<meta name="description" content="Accessibility at Gunther Werks Miami, by Prestige Imports.">
+<link rel="icon" href="assets/logos/gw-mark.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Instrument+Sans:wdth,wght@75..100,400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="vendor/lenis.css">
+<link rel="stylesheet" href="f.css?v=g3k">
+<script>
+  (function () {
+    var d = document.documentElement, q = new URLSearchParams(location.search);
+    d.style.setProperty('--vh', innerHeight + 'px');
+    if (q.has('static')) d.classList.add('static');
+    d.classList.add('js');
+  })();
+</script>
+</head>
+<body class="lgp">
+<a class="skip" href="#main">Skip to content</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <!-- the header's lens: lens.js draws the displacement map to the bar's size -->
+  <filter id="hd-lens" x="0" y="0" width="1" height="1" filterUnits="userSpaceOnUse" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+    <feImage x="0" y="0" width="1" height="1" preserveAspectRatio="none" result="map"/>
+    <feDisplacementMap in="SourceGraphic" in2="map" scale="44" xChannelSelector="R" yChannelSelector="G" result="bent"/>
+    <feGaussianBlur in="bent" stdDeviation="2.2" result="soft"/>
+    <feColorMatrix in="soft" type="saturate" values="1.45"/>
+  </filter>
+  <defs>
+    <!-- GW's X key ("a symbol of every door that closed"): a solid disc with four slots cut at N, E, S, W. -->
+    <mask id="key-cut" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+      <rect width="24" height="24" fill="#fff"/>
+      <g fill="#000" stroke="#000" stroke-width="1.6" stroke-linejoin="round">
+        <path d="M12 8.6 6.6-1h10.8Z"/><path d="M12 8.6 6.6-1h10.8Z" transform="rotate(90 12 12)"/><path d="M12 8.6 6.6-1h10.8Z" transform="rotate(180 12 12)"/><path d="M12 8.6 6.6-1h10.8Z" transform="rotate(270 12 12)"/>
+      </g>
+      <circle cx="12" cy="12" r="1.7" fill="#000"/>
+    </mask>
+  </defs>
+  <symbol id="key" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="currentColor" mask="url(#key-cut)"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="4.8" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="12" cy="12" r="3.9" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="17.2" cy="6.8" r=".95" fill="currentColor"/></symbol>
+  <symbol id="i-fb" viewBox="0 0 24 24"><path d="M14 21v-7.5h3l.5-3.5H14V8.4c0-1 .3-1.8 1.8-1.8h1.8V3.5c-.3 0-1.4-.1-2.6-.1-2.6 0-4.4 1.6-4.4 4.5V10H7.7v3.5h2.9V21z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></symbol>
+  <symbol id="i-out" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 16 16"><path d="M5.6 2.5 3.4 3.2c-.6.2-1 .9-.8 1.6 1.3 4.4 4.2 7.3 8.6 8.6.7.2 1.4-.2 1.6-.8l.7-2.2-2.9-1.4-1.3 1.3C7.7 9.6 6.4 8.3 5.7 6.7L7 5.4 5.6 2.5Z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></symbol>
+  <symbol id="i-pause" viewBox="0 0 16 16"><path d="M5 3.5h2v9H5zM9 3.5h2v9H9z" fill="currentColor"/></symbol>
+  <symbol id="i-play" viewBox="0 0 16 16"><path d="M5.5 3.8v8.4L12 8 5.5 3.8Z" fill="currentColor"/></symbol>
+</svg>
+
+<!-- ============ HEADER (as on the home page) ============ -->
+<header class="hd">
+  <div class="hd__bar">
+    <a class="hd__brand" href="index.html" aria-label="Gunther Werks Miami, by Prestige Imports. Home">
+      <img class="hd__logo hd__logo--w" src="assets/logos/gunther-werks-logo-white.svg" alt="" width="150" height="16">
+      <img class="hd__logo hd__logo--k" src="assets/logos/gunther-werks-logo.svg" alt="" width="150" height="16">
+      <span class="hd__city">Miami<span class="hd__pi"> · Prestige Imports</span></span>
+    </a>
+    <nav class="hd__nav" aria-label="Primary">
+      <span class="hd__pool" aria-hidden="true"></span>
+      <a href="index.html#programs">Programs</a>
+      <a href="index.html#atelier">Atelier</a>
+      <a href="index.html#provenance">Provenance</a>
+      <a href="index.html#news">News</a>
+      <a href="index.html#miami">Miami</a>
+    </nav>
+    <div class="hd__end">
+      <a class="hd__tel" href="tel:+18332905691" aria-label="Call sales, (833) 290-5691"><svg aria-hidden="true"><use href="#i-phone"/></svg><span>(833) 290-5691</span></a>
+      <a class="btn btn--lit btn--sm hd__enq" href="index.html#inquire"><span>Inquire</span></a>
+      <button class="btn btn--clear btn--sm hd__menu" type="button" aria-expanded="false" aria-controls="menu"><span>Menu</span></button>
+    </div>
+  </div>
+</header>
+
+<div class="menu" id="menu" hidden>
+  <div class="menu__dim" data-mclose></div>
+  <div class="menu__sheet glass glass--smoke" role="dialog" aria-modal="true" aria-label="Menu">
+    <span class="menu__grab" aria-hidden="true"></span>
+    <button class="menu__close" type="button" data-mclose>Close</button>
+    <nav class="menu__nav" aria-label="Menu">
+      <a href="index.html#programs">Programs</a><a href="index.html#atelier">Atelier</a><a href="index.html#provenance">Provenance</a><a href="index.html#news">News</a><a href="index.html#miami">Miami</a>
+    </nav>
+    <div class="menu__foot">
+      <p>Prestige Imports, 15050 Biscayne Blvd<br>Sales <a href="tel:+18332905691">(833) 290-5691</a><br>Service &amp; parts <a href="tel:+18332905692">(833) 290-5692</a></p>
+      <a class="btn btn--lit btn--block" href="index.html#inquire"><span>Inquire</span></a>
+      <div class="menu__out"><a class="btn btn--line btn--sm" href="https://guntherwerks.com/" target="_blank" rel="noopener"><span>guntherwerks.com</span><svg aria-hidden="true"><use href="#i-out"/></svg></a><a class="btn btn--line btn--sm btn--ico" href="https://www.instagram.com/guntherwerksmiami/" target="_blank" rel="noopener" aria-label="Gunther Werks Miami on Instagram"><svg aria-hidden="true"><use href="#i-ig"/></svg></a><a class="btn btn--line btn--sm btn--ico" href="https://www.facebook.com/guntherwerksna/" target="_blank" rel="noopener" aria-label="Gunther Werks on Facebook"><svg aria-hidden="true"><use href="#i-fb"/></svg></a></div>
+    </div>
+  </div>
+</div>
+
+<main id="main" class="lg">
+  <div class="lg__in wrap">
+    <p class="kick">Gunther Werks Miami</p>
+    <h1 class="lg__h1">Accessibility</h1>
+    <div class="lg__body">
+      <p>Prestige Imports wants everyone to be able to explore Gunther Werks Miami and reach us easily, including people who use a screen reader, a keyboard or other assistive technology.</p>
+      <h2>Our aim</h2>
+      <p>We aim to meet the Web Content Accessibility Guidelines (WCAG) 2.2 at level AA, and we review the site against them as it changes.</p>
+      <h2>On this site</h2>
+      <ul>
+        <li>A “Skip to content” link is the first thing a keyboard reaches on every page.</li>
+        <li>Links, buttons and form fields show a clear outline when they have keyboard focus.</li>
+        <li>Photographs carry text descriptions; purely decorative images are hidden from screen readers.</li>
+        <li>If your device asks for reduced motion, the scroll animations stop and every section stands still.</li>
+        <li>If your device asks for reduced transparency, the glass panels turn solid.</li>
+        <li>The menu and the news stories open as dialogs that close with the Escape key.</li>
+      </ul>
+      <h2>Tell us</h2>
+      <p>If any part of the site is hard to use, or you need information in another format, call sales on <a href="tel:+18332905691">(833) 290-5691</a> or visit us at 15050 Biscayne Blvd, North Miami Beach, FL 33181. We will help you directly and fix what we can.</p>
+      <p class="lg__date">Last reviewed November 2026.</p>
+    </div>
+  </div>
+</main>
+
+<!-- ============ FOOTER (as on the home page) ============ -->
+<footer class="ft">
+  <div class="ft__top wrap">
+    <img src="assets/logos/gunther-werks-logo-white.svg" alt="Gunther Werks" width="360" height="39">
+    <p class="ft__city">Miami <span>· Prestige Imports</span></p>
+    <div class="ft__out"><a class="btn btn--line btn--sm" href="https://guntherwerks.com/" target="_blank" rel="noopener"><span>guntherwerks.com</span><svg aria-hidden="true"><use href="#i-out"/></svg></a><a class="btn btn--line btn--sm btn--ico" href="https://www.instagram.com/guntherwerksmiami/" target="_blank" rel="noopener" aria-label="Gunther Werks Miami on Instagram"><svg aria-hidden="true"><use href="#i-ig"/></svg></a><a class="btn btn--line btn--sm btn--ico" href="https://www.facebook.com/guntherwerksna/" target="_blank" rel="noopener" aria-label="Gunther Werks on Facebook"><svg aria-hidden="true"><use href="#i-fb"/></svg></a></div>
+  </div>
+  <div class="ft__grid wrap">
+    <ul class="ft__big" role="list">
+      <li><a href="index.html#programs">Programs</a></li><li><a href="index.html#atelier">Atelier</a></li><li><a href="index.html#provenance">Provenance</a></li><li><a href="index.html#news">News</a></li><li><a href="index.html#miami">Miami</a></li>
+    </ul>
+    <div class="ft__col"><p class="ft__h">Programs</p><ul role="list"><li><a href="index.html#f26" data-k="f26">F-26</a></li><li><a href="index.html#turbo" data-k="turbo">Turbo</a></li><li><a href="index.html#gwr" data-k="gwr">GWR</a></li><li><a href="index.html#gwx" data-k="gwx">GWX</a></li><li><a href="index.html#special-editions">Special editions</a></li></ul></div>
+    <div class="ft__col"><p class="ft__h">Ownership</p><ul role="list"><li><a href="index.html#provenance">Provenance Succession</a></li><li>5-year, 100,000-mile warranty</li></ul></div>
+    <div class="ft__col"><p class="ft__h">Dealer</p><ul role="list"><li>Prestige Imports</li><li>15050 Biscayne Blvd</li><li>North Miami Beach, FL&nbsp;33181</li><li>Sales <a href="tel:+18332905691">(833) 290-5691</a></li><li>Service &amp; parts <a href="tel:+18332905692">(833) 290-5692</a></li><li><a href="https://www.google.com/maps/dir/?api=1&amp;destination=15050+Biscayne+Blvd%2C+North+Miami+Beach%2C+FL+33181" target="_blank" rel="noopener">Get directions</a></li></ul></div>
+  </div>
+  <div class="ft__legal wrap">
+    <p>© 2026 Prestige Imports · <a href="privacy.html">Privacy</a> · <a href="accessibility.html">Accessibility</a> · <a href="cookies.html">Cookie settings</a></p>
+    <p class="ft__small">Gunther Werks Miami is presented by Prestige Imports, an official Gunther Werks dealer. Gunther Werks’ services are provided solely by Gunther Werks. This site is not affiliated with, associated with, or endorsed by Porsche. Porsche and all Porsche model names are registered trademarks of Dr. Ing. h.c. F. Porsche AG.</p>
+  </div>
+</footer>
+
+<script src="legal.js?v=1"></script>
+<script src="lens.js?v=2"></script>
+</body>
+</html>
